@@ -1,0 +1,42 @@
+.container {
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(3, 1fr);
+
+	border-bottom: solid 1px gray;
+	background-color: rgb(243, 243, 243);
+
+	//? css pre logo
+	.navLogo {
+		width: 260px;
+	}
+
+	//? css pre navigáciu
+	.navigation {
+		a {
+			text-decoration: none;
+			color: black;
+
+			justify-self: center;
+
+			margin-left: 5%;
+
+			padding: 10px 5%;
+			
+
+			&.active {
+				color: rgb(255, 0, 0);
+			}
+		}
+		a:first-child {
+			margin-left: 7%;
+		}
+	}
+
+	//? css pre button
+	.btn {
+		justify-self: end;
+		max-width: 120px;
+		margin-right: 5%;
+	}
+}
