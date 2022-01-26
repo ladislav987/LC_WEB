@@ -4,7 +4,7 @@ const Html = () => {
   return (
     <div>
       <h1>HTML stránka</h1>
-      <h2>Skusška</h2>
+      <h2>Skúška</h2>
     </div>
   );
 };
