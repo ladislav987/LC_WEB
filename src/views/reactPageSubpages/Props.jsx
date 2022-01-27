@@ -4,7 +4,7 @@ const Props = () => {
   return (
     <div>
       <p>
-        Props je obyčajný HTML atribút ktorému môžeme pridať názov a hodnotu.{" "}
+        Props je obyčajný HTML atribút ktorému môžeme pridať názov a hodnotu.
       </p>
 
       <div className="code-example">
@@ -20,9 +20,9 @@ const Props = () => {
       </div>
 
       <p>
-        V komponente TheNavigation (rodič) vznikde premená brend === "main".
+        V komponente TheNavigation (rodič) vznikde premená brend === "main". Do
+        potomka môžeme pošlať props s názvom "props" podľa konvencie
       </p>
-      <p>Do potomka môžeme pošlem props s názvom "props" podľa konvencie</p>
 
       <div className="code-example">
         <code>
@@ -69,7 +69,7 @@ const Props = () => {
         </code>
       </div>
 
-      <p>Dobrým zvykom je rozložiť Props do funkcie</p>
+      <p>Dobrým zvykom je rozložiť Props do funkcie (Props Destructuring)</p>
 
       <div className="code-example">
         <code>
@@ -95,7 +95,10 @@ const Props = () => {
       </div>
 
       <p>A preto v kóde netreba používať props.brand ale skrátene brand.</p>
-      <p> <strong>Props sú len na čítanie (Read-only)</strong> </p>
+      <p>
+        {" "}
+        <strong>Props sú len na čítanie (Read-only)</strong>{" "}
+      </p>
     </div>
   );
 };

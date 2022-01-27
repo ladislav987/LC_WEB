@@ -15,3 +15,5 @@
 
 9. vyriešený problém s active class v navigácii
 
+childdren props idú medzi uzatvaracie tagy
+rozložím si props ale musí sa volať presne "children" a môžem ho renderovať
