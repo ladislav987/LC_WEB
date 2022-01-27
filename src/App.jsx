@@ -20,23 +20,27 @@ const App = () => {
   //?dark_light_theme
   const [theme, changeTheme] = ThemeHandler();
 
+  let vyska = document.body.scrollHeight;
+  console.log(vyska);
+
   return (
     <div className={`App ${theme}`}>
+      <div className="container">
       <header>
-        <nav>
+        <nav className="hornaNav">
           <TheNavigation changeTheme={changeTheme} />
         </nav>
       </header>
-
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/html" element={<Html />} />
-          <Route path="/css" element={<Css />} />
-          <Route path="/js" element={<Js />} />
-          <Route path="/react" element={<ReactPage />} />
-        </Routes>
-      </main>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/html" element={<Html />} />
+            <Route path="/css" element={<Css />} />
+            <Route path="/js" element={<Js />} />
+            <Route path="/react" element={<ReactPage />} />
+          </Routes>
+        </main>
+      </div>
     </div>
   );
 };

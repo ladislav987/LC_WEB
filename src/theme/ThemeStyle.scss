@@ -1,9 +1,43 @@
+$theme-1-color: #000;
+$theme-1-page-background-color: #fff;
+$theme-1-nav-background-color: rgb(243, 243, 243);
+
+$theme-2-color: #fff;
+$theme-2-page-background-color: #000;
+$theme-2-nav-background-color: rgb(61, 61, 61);
+
+$theme-3-color: rgb(238, 115, 115);
+$theme-3-page-background-color: rgb(2, 34, 56);
+$theme-3-nav-background-color: rgb(56, 43, 43);
+
+.container{
+    min-height: 100vh;
+}
+
 .theme-1{
-    background-color: antiquewhite;
+    .hornaNav{
+        background-color: $theme-1-nav-background-color;
+    }
+    .container{
+        background-color: $theme-1-page-background-color;
+        color: $theme-1-color;
+    }
 }
 .theme-2{
-    background-color: aqua;
+    .hornaNav{
+        background-color: $theme-2-nav-background-color;
+    }
+    .container{
+        background-color: $theme-2-page-background-color;
+        color: $theme-2-color;
+    }
 }
 .theme-3{
-    background-color: dodgerblue;
+    .hornaNav{
+        background-color: $theme-3-nav-background-color;
+    }
+    .container{
+        background-color: $theme-3-page-background-color;
+        color: $theme-3-color;
+    }
 }
