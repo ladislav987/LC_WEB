@@ -14,3 +14,4 @@
 8. vytvoriť scss moduly pre views a komponenty
 
 9. vyriešený problém s active class v navigácii
+

@@ -2,6 +2,8 @@ $theme-1-color: #000;
 $theme-1-page-background-color: #fff;
 $theme-1-nav-background-color: rgb(243, 243, 243);
 
+$theme-1-code-example-background-color: rgb(184, 177, 177);
+
 $theme-2-color: #fff;
 $theme-2-page-background-color: #000;
 $theme-2-nav-background-color: rgb(61, 61, 61);
@@ -10,33 +12,37 @@ $theme-3-color: rgb(238, 115, 115);
 $theme-3-page-background-color: rgb(2, 34, 56);
 $theme-3-nav-background-color: rgb(56, 43, 43);
 
-.container{
+.container {
     min-height: 100vh;
 }
 
-.theme-1{
-    .hornaNav{
+.theme-1 {
+    .hornaNav {
         background-color: $theme-1-nav-background-color;
     }
-    .container{
+    .container {
         background-color: $theme-1-page-background-color;
         color: $theme-1-color;
     }
+
+    .code-example {
+        background-color: $theme-1-code-example-background-color;
+    }
 }
-.theme-2{
-    .hornaNav{
+.theme-2 {
+    .hornaNav {
         background-color: $theme-2-nav-background-color;
     }
-    .container{
+    .container {
         background-color: $theme-2-page-background-color;
         color: $theme-2-color;
     }
 }
-.theme-3{
-    .hornaNav{
+.theme-3 {
+    .hornaNav {
         background-color: $theme-3-nav-background-color;
     }
-    .container{
+    .container {
         background-color: $theme-3-page-background-color;
         color: $theme-3-color;
     }
