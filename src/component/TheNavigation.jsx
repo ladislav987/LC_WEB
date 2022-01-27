@@ -7,11 +7,10 @@ import styles from "./TheNavigation.module.scss";
 //? import logo
 import logo from "../assets/logo3.svg";
 
-const TheNavigation = () => {
+const TheNavigation = ({ toggleTheme }) => {
   return (
     <div className={styles.container}>
-
-        <img src={logo} className={styles.navLogo} alt="logo" />
+      <img src={logo} className={styles.navLogo} alt="logo" />
 
       <nav className={styles.navigation}>
         <NavLink
@@ -45,7 +44,9 @@ const TheNavigation = () => {
           React
         </NavLink>
       </nav>
-      <button className={styles.btn}>White/Black</button>
+      <button className={styles.btn} onClick={toggleTheme}>
+        White/Black
+      </button>
     </div>
   );
 };
