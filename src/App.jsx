@@ -13,41 +13,31 @@ import Js from "./views/Js";
 import ReactPage from "./views/ReactPage";
 
 //?dark_light_theme
-import { ThemeProvider } from "styled-components";
-import useDarkMode from "./dark_light_theme/useDarkMode";
-import {
-  GlobalStyles,
-  lightTheme,
-  darkTheme,
-} from "./dark_light_theme/globalStyles";
-
+import ThemeHandler from "./theme/ThemeHandler";
+import "./theme/ThemeStyle.scss";
 
 const App = () => {
   //?dark_light_theme
-  const [theme, toggleTheme] = useDarkMode();
-  const themeMode = theme === "light" ? lightTheme : darkTheme;
+  const [theme, changeTheme] = ThemeHandler();
 
   return (
-    <ThemeProvider theme={themeMode}>
-      <GlobalStyles />
-      <div>
-        <header>
-          <nav>
-            <TheNavigation toggleTheme={toggleTheme} />
-          </nav>
-        </header>
+    <div className={`App ${theme}`}>
+      <header>
+        <nav>
+          <TheNavigation changeTheme={changeTheme} />
+        </nav>
+      </header>
 
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/html" element={<Html />} />
-            <Route path="/css" element={<Css />} />
-            <Route path="/js" element={<Js />} />
-            <Route path="/react" element={<ReactPage />} />
-          </Routes>
-        </main>
-      </div>
-    </ThemeProvider>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/html" element={<Html />} />
+          <Route path="/css" element={<Css />} />
+          <Route path="/js" element={<Js />} />
+          <Route path="/react" element={<ReactPage />} />
+        </Routes>
+      </main>
+    </div>
   );
 };
 
