@@ -5,6 +5,7 @@ import "./views.scss";
 
 import Props from "./reactPageSubpages/Props";
 import PropsChildren from "./reactPageSubpages/PropsChildren";
+import Map from "./reactPageSubpages/Map";
 
 const ReactPage = () => {
   return (
@@ -18,6 +19,16 @@ const ReactPage = () => {
           <li>
             <NavLink to="propsChildren">Props Children</NavLink>
           </li>
+          <li>
+            <details>
+              <summary>Funckie</summary>
+              <ul className="toggle">
+                <li>
+                  <NavLink to="map">map()</NavLink>
+                </li>
+              </ul>
+            </details>
+          </li>
         </ul>
       </aside>
 
@@ -25,6 +36,7 @@ const ReactPage = () => {
         <Routes>
           <Route path="props" element={<Props />} />
           <Route path="propsChildren" element={<PropsChildren />} />
+          <Route path="map" element={<Map />} />
         </Routes>
       </main>
     </div>
