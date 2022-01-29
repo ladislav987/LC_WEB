@@ -17,3 +17,22 @@
 
 childdren props idú medzi uzatvaracie tagy
 rozložím si props ale musí sa volať presne "children" a môžem ho renderovať
+
+
+V reacte sa map() používa na iterovanie v objekte kde z callback funkcie vráti JSX
+
+const Users = () => {
+  const data = [
+    { id: 1, name: "John" },
+    { id: 2, name: "Victor" },
+    { id: 3, name: "Jane" },
+  ];
+
+  return (
+    <div className="users">
+      {data.map((user) => (
+        <div className="user">{user}</div>
+      ))}
+    </div>
+  );
+};

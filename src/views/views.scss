@@ -12,17 +12,16 @@
         grid-column: 1/2;
         // grid-row: 5/6;
 
-        li{
+        li {
             display: block;
             margin-bottom: 15px;
         }
 
-        ul{
+        ul {
             padding: 0 30px;
-
         }
 
-        a{
+        a {
             text-decoration: none;
 
             padding: 5px 15px;
@@ -30,20 +29,24 @@
 
             font-size: 18px;
 
-            transition: background-color 0.3s linear
+            // .block {
+            //     .block {
+            //         transition: transform 0.6s cubic-bezier(0.5, 1, 0.89, 1);
+            //     }
+            // }
         }
     }
 
-    main{
+    main {
         grid-column: 2;
         justify-self: center;
 
-        p{
+        p {
             margin-right: 250px;
             padding: 15px 0;
         }
 
-        .code-example{
+        .code-example {
             max-width: 91%;
 
             padding: 10px 20px;

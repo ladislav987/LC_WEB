@@ -31,9 +31,9 @@ const App = () => {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/html" element={<Html />} />
-            <Route path="/css" element={<Css />} />
-            <Route path="/js" element={<Js />} />
+            <Route path="/html/*" element={<Html />} />
+            <Route path="/css/*" element={<Css />} />
+            <Route path="/js/*" element={<Js />} />
             <Route path="/react/*" element={<ReactPage />} />
           </Routes>
         </main>

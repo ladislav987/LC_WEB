@@ -24,6 +24,8 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
 
 .container {
     min-height: 100vh;
+    // transition: background-color 5.3s linear;
+    transition: background-color 0.6s cubic-bezier(0.12, 0, 0.39, 0), color 0.6s cubic-bezier(0.12, 0, 0.39, 0);
 }
 
 .theme-1 {
