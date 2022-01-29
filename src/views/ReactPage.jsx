@@ -6,6 +6,7 @@ import "./views.scss";
 import Props from "./reactPageSubpages/Props";
 import PropsChildren from "./reactPageSubpages/PropsChildren";
 import Fragment from "./reactPageSubpages/Fragment";
+import PrevState from "./reactPageSubpages/PrevState";
 import Map from "./reactPageSubpages/Map";
 import UseState from "./reactPageSubpages/UseState";
 import UseEffect from "./reactPageSubpages/UseEffect";
@@ -25,6 +26,9 @@ const ReactPage = () => {
           </li>
           <li>
             <NavLink to="fragment">Fragment</NavLink>
+          </li>
+          <li>
+            <NavLink to="prevState">prevState</NavLink>
           </li>
           <li>
             <details>
@@ -60,6 +64,7 @@ const ReactPage = () => {
           <Route path="props" element={<Props />} />
           <Route path="propsChildren" element={<PropsChildren />} />
           <Route path="fragment" element={<Fragment />} />
+          <Route path="prevState" element={<PrevState />} />
           <Route path="hook" element={<Hook />} />
           <Route path="useState" element={<UseState />} />
           <Route path="useEffect" element={<UseEffect />} />
