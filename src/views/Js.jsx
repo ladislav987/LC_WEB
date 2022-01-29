@@ -1,8 +1,9 @@
 import React from "react";
+import "./views.scss";
 
 const Js = () => {
   return (
-    <div>
+    <div className="page-wrapper">
       <h1>JS stránka</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam nulla,
