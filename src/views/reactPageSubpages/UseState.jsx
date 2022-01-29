@@ -19,7 +19,10 @@ const UseState = () => {
         destructoringu vytiahnem hodnoty z poľa a ku každej priradím button na
         mazanie.
       </p>
-      <p>- funkcia removeItem odfiltruje záznamy ktoré nemajú rovnaké id a vráti pole len s ostatnými hodnotami. </p>
+      <p>
+        - funkcia removeItem odfiltruje záznamy ktoré nemajú rovnaké id a vráti
+        pole len s ostatnými hodnotami.{" "}
+      </p>
 
       <div className="code-example">
         <pre>
@@ -50,6 +53,36 @@ const UseState = () => {
     <button className='btn' onClick={() => setPeople([])}>Remove all</button>
   </Fragment>
 
+};`}</code>
+        </pre>
+      </div>
+
+      <h3>useState - Object</h3>
+      <p>
+        - do useState pošlem objekt s hodnotami. V returne komponentu je
+        tlačidlo ktoré po stlačení zavolá funkciu changeMessage ktorá pomocou spread operátora vráti všetky hodnoty okrem message nezmenené.
+      </p>
+
+      <div className="code-example">
+        <pre>
+          <code>{`const UseStateObject = () => {
+  const [person, setPerson] = useState({
+    name: "peter",
+    age: 24,
+    message: "new message",
+  });
+
+  const changeMessage = () => {
+    setPerson({...person, message: "uplne niečo iné"})
+  }
+  return (
+    <>
+      <h3>{person.name}</h3>
+      <h3>{person.age}</h3>
+      <h3>{person.message}</h3>
+      <button className='btn' onClick={changeMessage}>Change</button>
+    </>
+  )
 };`}</code>
         </pre>
       </div>
