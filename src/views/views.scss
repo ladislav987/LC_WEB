@@ -37,9 +37,10 @@
         }
     }
 
+
     main {
         grid-column: 2;
-        justify-self: center;
+        // justify-self: center;
 
         p {
             margin-right: 250px;
@@ -50,6 +51,11 @@
             max-width: 91%;
 
             padding: 10px 20px;
+            margin-bottom: 20px;
         }
+    }
+
+    .toggle{
+        margin: 10px 0;
     }
 }
