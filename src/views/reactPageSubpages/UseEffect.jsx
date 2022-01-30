@@ -5,8 +5,9 @@ const UseState = () => {
     <div>
       <p>
         <code>useEffect()</code> nám dovoľuje vyvolať vedľajší efekt v funkcii
-        komponentu{" "}
+        komponentu.{" "}
       </p>
+      <p>Defaultne sa useEffect spustí po každom renderovaní.</p>
 
       <div className="code-example">
         <pre>
