@@ -1,16 +1,28 @@
 import React from "react";
+import { Routes, Route, NavLink } from "react-router-dom";
+
 import "./views.scss";
+
+import Cursor from "./cssSubpages/Cursor";
 
 const Css = () => {
   return (
     <div className="page-wrapper">
-      <h1>CSS stránka ........</h1>
-      <h3>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur
-        itaque dicta doloremque deserunt, nisi voluptatibus architecto est quasi
-        aliquam quae necessitatibus dolore explicabo non assumenda cupiditate
-        aliquid aperiam autem harum.
-      </h3>
+      <h1>CSS sekcia</h1>
+
+      <aside>
+        <ul>
+          <li>
+            <NavLink to="cursor">Cursor</NavLink>
+          </li>
+        </ul>
+      </aside>
+
+      <main>
+        <Routes>
+          <Route path="cursor" element={<Cursor />} />
+        </Routes>
+      </main>
     </div>
   );
 };
