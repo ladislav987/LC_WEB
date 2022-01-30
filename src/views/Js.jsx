@@ -1,18 +1,45 @@
 import React from "react";
+import { Routes, Route, NavLink } from "react-router-dom";
+
 import "./views.scss";
+
+import Promises from "./jsSubpages/Promises";
+import Async from "./jsSubpages/Async";
+import Fetch from "./jsSubpages/Fetch";
 
 const Js = () => {
   return (
     <div className="page-wrapper">
-      <h1>JS stránka</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam nulla,
-        magni ut libero quod modi! Tempore sit odit neque voluptas. Tenetur,
-        nobis impedit quae doloribus maxime fuga porro! Laudantium ut nihil
-        omnis? Consequuntur, quia. Minus consequuntur voluptatem autem hic
-        praesentium reiciendis sequi voluptatibus velit quisquam quod, sit
-        dolore tempora unde!
-      </p>
+      <h1>JS sekcia</h1>
+
+      <aside>
+        <ul>
+          <li>
+            <NavLink to="promises">Promises</NavLink>
+          </li>
+          <li>
+            <NavLink to="async">Async</NavLink>
+          </li>
+          <li>
+            <details>
+              <summary>Funkcie</summary>
+              <ul className="toggle">
+                <li>
+                  <NavLink to="fetch">fetch()</NavLink>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </aside>
+
+      <main>
+        <Routes>
+          <Route path="promises" element={<Promises />} />
+          <Route path="async" element={<Async />} />
+          <Route path="fetch" element={<Fetch />} />
+        </Routes>
+      </main>
     </div>
   );
 };
