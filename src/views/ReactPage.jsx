@@ -8,6 +8,7 @@ import PropsChildren from "./reactPageSubpages/PropsChildren";
 import Fragment from "./reactPageSubpages/Fragment";
 import PrevState from "./reactPageSubpages/PrevState";
 import Map from "./reactPageSubpages/Map";
+import CallbackFunction from "./reactPageSubpages/CallbackFunction";
 import UseState from "./reactPageSubpages/UseState";
 import UseEffect from "./reactPageSubpages/UseEffect";
 import Hook from "./reactPageSubpages/Hook";
@@ -51,6 +52,9 @@ const ReactPage = () => {
               <summary>Funkcie</summary>
               <ul className="toggle">
                 <li>
+                  <NavLink to="callbackFunction">Callback funkcia</NavLink>
+                </li>
+                <li>
                   <NavLink to="map">map()</NavLink>
                 </li>
               </ul>
@@ -68,6 +72,7 @@ const ReactPage = () => {
           <Route path="hook" element={<Hook />} />
           <Route path="useState" element={<UseState />} />
           <Route path="useEffect" element={<UseEffect />} />
+          <Route path="callbackFunction" element={<CallbackFunction />} />
           <Route path="map" element={<Map />} />
         </Routes>
       </main>
