@@ -15,7 +15,7 @@ import Hook from "./reactPageSubpages/Hook";
 const ReactPage = () => {
   return (
     <div className="page-wrapper">
-      <h1>React stránka</h1>
+      <h1>React sekcia</h1>
       <aside>
         <ul>
           <li>
