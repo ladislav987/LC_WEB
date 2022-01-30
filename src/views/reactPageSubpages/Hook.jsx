@@ -35,36 +35,7 @@ const Hook = () => {
         </pre>
       </div>
 
-      <p>Do useEffect môžeme pridať další argument (pole).</p>
 
-      <div className="code-example">
-        <pre>
-          <code>{`useEffect(() => {
-    .....
-  }, []);
-`}</code>
-        </pre>
-      </div>
-
-      <p>
-        Tento druhý argument sa nazýva "Dependency list" a určuje kedy sa má
-        zavolá useEffect. V prípade že je [ ] prázdne sa useEffect zavolá len
-        pri počiatočnom spustení.
-      </p>
-
-      <p>
-        Pri zadaní premennej do [ ] sa useEffect zavolá len pri zmene tejto
-        premennej
-      </p>
-
-      <div className="code-example">
-        <pre>
-          <code>{`useEffect(() => {
-    .....
-  }, [value]);
-`}</code>
-        </pre>
-      </div>
 
       <p></p>
     </div>
