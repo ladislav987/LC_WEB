@@ -8,21 +8,22 @@
 
 	//? css pre logo
 	.navLogo {
-		width: 260px;
+		max-width: 280px;
+		margin-left: 5px;
 	}
 
 	//? css pre navigáciu
 	.navigation {
+		margin: 20px 0;
 		a {
 			text-decoration: none;
 			color: black;
 
 			justify-self: center;
 
-			margin-left: 5%;
+			margin: 20px 0 10px 5%;
 
 			padding: 10px 5%;
-
 
 			&.active {
 				color: rgb(255, 0, 0);
@@ -30,6 +31,13 @@
 		}
 		a:first-child {
 			margin-left: 7%;
+		}
+
+		a:hover,
+		a:active,
+		a:focus {
+			cursor: pointer;
+			transition: 0.5s all ease;
 		}
 	}
 

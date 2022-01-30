@@ -45,6 +45,12 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
         a:focus {
             background-color: $theme-1-aside-a-hover-color;
         }
+
+        summary:hover,
+        summary:active,
+        summary:focus {
+            background-color: $theme-1-aside-a-hover-color;
+        }
     }
 
     .code-example {
@@ -68,6 +74,13 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
         a:focus {
             background-color: $theme-2-aside-a-hover-color;
         }
+
+
+        summary:hover,
+        summary:active,
+        summary:focus {
+            background-color: $theme-2-aside-a-hover-color;
+        }
     }
 
     .code-example {
@@ -89,6 +102,13 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
         a:hover,
         a:active,
         a:focus {
+            background-color: $theme-3-aside-a-hover-color;
+        }
+
+
+        summary:hover,
+        summary:active,
+        summary:focus {
             background-color: $theme-3-aside-a-hover-color;
         }
     }
