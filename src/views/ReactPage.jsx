@@ -13,6 +13,7 @@ import UseState from "./reactPageSubpages/UseState";
 import UseEffect from "./reactPageSubpages/UseEffect";
 import Hook from "./reactPageSubpages/Hook";
 import MultipleReturns from "./reactPageSubpages/MultipleReturns";
+import Forms from "./reactPageSubpages/Forms";
 
 const ReactPage = () => {
   return (
@@ -34,6 +35,9 @@ const ReactPage = () => {
           </li>
           <li>
             <NavLink to="multipleReturns">MultipleReturns</NavLink>
+          </li>
+          <li>
+            <NavLink to="forms">Forms</NavLink>
           </li>
           <li>
             <details>
@@ -74,6 +78,7 @@ const ReactPage = () => {
           <Route path="fragment" element={<Fragment />} />
           <Route path="prevState" element={<PrevState />} />
           <Route path="multipleReturns" element={<MultipleReturns />} />
+          <Route path="forms" element={<Forms />} />
           <Route path="hook" element={<Hook />} />
           <Route path="useState" element={<UseState />} />
           <Route path="useEffect" element={<UseEffect />} />
