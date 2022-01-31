@@ -50,11 +50,12 @@ const UseState = () => {
       </div>
       <p>
         Pokiaľ v useEffect používame set funkciu alebo addEventListener je
-        potrebné tiež zavolať Cleanup funkciu ktorá zabráni opätovnému volaniu z
-        useEffect alebo dependency array.
+        potrebné tiež zavolať Cleanup funkciu alebo dependency array ktoré
+        zabránia opätovnému volaniu listenera z useEffect.
         <br /> Napr. pri pridaní addEventListenera by sa pri každom renderovaní
-        pridal nový addEventListener alebo pri set funkcii by vznikla nekonečná
-        slučka kedže zmena premennej vyvolá renderovanie.
+        alebo skrytí/zobrazení elementu pridal nový addEventListener alebo pri
+        set funkcii by vznikla nekonečná slučka kedže zmena premennej vyvolá
+        renderovanie.
       </p>
       <div className="code-example">
         <pre>
