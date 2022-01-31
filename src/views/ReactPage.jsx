@@ -12,6 +12,7 @@ import CallbackFunction from "./reactPageSubpages/CallbackFunction";
 import UseState from "./reactPageSubpages/UseState";
 import UseEffect from "./reactPageSubpages/UseEffect";
 import Hook from "./reactPageSubpages/Hook";
+import MultipleReturns from "./reactPageSubpages/MultipleReturns";
 
 const ReactPage = () => {
   return (
@@ -30,6 +31,9 @@ const ReactPage = () => {
           </li>
           <li>
             <NavLink to="prevState">prevState</NavLink>
+          </li>
+          <li>
+            <NavLink to="multipleReturns">MultipleReturns</NavLink>
           </li>
           <li>
             <details>
@@ -69,6 +73,7 @@ const ReactPage = () => {
           <Route path="propsChildren" element={<PropsChildren />} />
           <Route path="fragment" element={<Fragment />} />
           <Route path="prevState" element={<PrevState />} />
+          <Route path="multipleReturns" element={<MultipleReturns />} />
           <Route path="hook" element={<Hook />} />
           <Route path="useState" element={<UseState />} />
           <Route path="useEffect" element={<UseEffect />} />
