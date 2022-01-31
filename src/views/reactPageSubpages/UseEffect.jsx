@@ -2,7 +2,7 @@ import React from "react";
 
 const UseState = () => {
   return (
-    <div>
+    <>
       <p>
         <code>useEffect()</code> nám dovoľuje vyvolať vedľajší efekt vo funkcii
         komponentu.{" "}
@@ -51,9 +51,10 @@ const UseState = () => {
       <p>
         Pokiaľ v useEffect používame set funkciu alebo addEventListener je
         potrebné tiež zavolať Cleanup funkciu ktorá zabráni opätovnému volaniu z
-        useEffect.
+        useEffect alebo dependency array.
         <br /> Napr. pri pridaní addEventListenera by sa pri každom renderovaní
-        pridal nový addEventListener alebo pri set funkcii by vznikla nekonečná slučka kedže zmena premennej vyvolá renderovanie.
+        pridal nový addEventListener alebo pri set funkcii by vznikla nekonečná
+        slučka kedže zmena premennej vyvolá renderovanie.
       </p>
       <div className="code-example">
         <pre>
@@ -67,7 +68,27 @@ const UseState = () => {
 `}</code>
         </pre>
       </div>
-    </div>
+
+      <p>
+        V useEffect nemôžeme priamo napísať async funkciu kedže tá vracia
+        promises, musíme vytvoriť osobytnú funkciu.
+      </p>
+
+      <div className="code-example">
+        <pre>
+          <code>{` const getUsers = async () => {
+    const response = await fetch(url);
+    const users = await response.json();
+    setUser(users);
+  }
+
+  useEffect(() => {
+    getUsers();
+  }, []);
+`}</code>
+        </pre>
+      </div>
+    </>
   );
 };
 
