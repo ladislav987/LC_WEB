@@ -8,6 +8,7 @@ import Async from "./jsSubpages/Async";
 import Fetch from "./jsSubpages/Fetch";
 import LogickeOperatory from "./jsSubpages/LogickeOperatory";
 import TernarnyOperator from "./jsSubpages/TernarnyOperator";
+import DynamicObjectProperties from "./jsSubpages/DynamicObjectProperties";
 
 const Js = () => {
   return (
@@ -22,6 +23,12 @@ const Js = () => {
 
           <li>
             <NavLink to="async">Async</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="dynamicObjectProperties">
+              Dynamic Object Properties
+            </NavLink>
           </li>
 
           <li>
@@ -58,6 +65,10 @@ const Js = () => {
           <Route path="logickeOperatory" element={<LogickeOperatory />} />
           <Route path="ternarnyOperator" element={<TernarnyOperator />} />
           <Route path="fetch" element={<Fetch />} />
+          <Route
+            path="dynamicObjectProperties"
+            element={<DynamicObjectProperties />}
+          />
         </Routes>
       </main>
     </div>
