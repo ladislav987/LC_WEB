@@ -58,6 +58,72 @@ const Forms = () => {
 `}</code>
         </pre>
       </div>
+
+      <p>Formulár s ukladaním do poľa</p>
+
+      <div className="code-example">
+        <pre>
+          <code>{`const ControlledInputs = () => {
+  // premenné firstName a email
+  const [firstName, setFirstName] = useState("");
+  const [email, setEmail] = useState("");
+
+  // prázdne pole people
+  const [people, setPeople] = useState([]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); //zabranenie odoslaniu formulara
+
+    // podmienka aby sa formulár neodoslal pokiaľ nie su vyplnené hodnoty
+    if (firstName && email) {
+      const person = { id: uniqid(), firstName, email };
+
+      // nastavenie starej hodnoty a pridanie novej
+      setPeople((people) => {
+        return [...people, person]
+      });
+
+      // nastavenie prázdnych inputov
+      setFirstName("");
+      setEmail("");
+    }
+  }
+
+  const handleNameInput = (event) => {
+    setFirstName(event.target.value)
+  }
+  const handleEmailInput = (event) => {
+    setEmail(event.target.value)
+  }
+
+  return (
+    <>
+      <article>
+        <Form
+          handleSubmit={handleSubmit}
+          handleNameInput={handleNameInput}
+          handleEmailInput={handleEmailInput}
+        />
+
+        {/* iterovanie v poli objektov */}
+        {
+          people.map(((person) => {
+            const { id, firstName, email } = person;
+
+            return <div key={id}>
+              <h4>{firstName}</h4>
+              <h5>{email}</h5>
+              <h5>{id}</h5>
+            </div>
+          }))
+        }
+      </article>
+    </>
+  )
+};
+`}</code>
+        </pre>
+      </div>
     </>
   );
 };
