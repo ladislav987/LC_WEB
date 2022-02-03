@@ -14,6 +14,9 @@ import UseEffect from "./reactPageSubpages/UseEffect";
 import Hook from "./reactPageSubpages/Hook";
 import MultipleReturns from "./reactPageSubpages/MultipleReturns";
 import Forms from "./reactPageSubpages/Forms";
+import UseRef from "./reactPageSubpages/UseRef";
+import HowCreateID from "./reactPageSubpages/HowCreateID";
+import UseReducer from "./reactPageSubpages/UseReducer";
 
 const ReactPage = () => {
   return (
@@ -40,6 +43,9 @@ const ReactPage = () => {
             <NavLink to="forms">Forms</NavLink>
           </li>
           <li>
+            <NavLink to="howCreateID">How Create ID</NavLink>
+          </li>
+          <li>
             <details>
               <summary>Hooks</summary>
               <ul className="toggle">
@@ -51,6 +57,12 @@ const ReactPage = () => {
                 </li>
                 <li>
                   <NavLink to="useEffect">useEffect()</NavLink>
+                </li>
+                <li>
+                  <NavLink to="useRef">useRef()</NavLink>
+                </li>
+                <li>
+                  <NavLink to="useReducer">useReducer()</NavLink>
                 </li>
               </ul>
             </details>
@@ -84,6 +96,9 @@ const ReactPage = () => {
           <Route path="useEffect" element={<UseEffect />} />
           <Route path="callbackFunction" element={<CallbackFunction />} />
           <Route path="map" element={<Map />} />
+          <Route path="useRef" element={<UseRef />} />
+          <Route path="howCreateID" element={<HowCreateID />} />
+          <Route path="useReducer" element={<UseReducer />} />
         </Routes>
       </main>
     </div>
