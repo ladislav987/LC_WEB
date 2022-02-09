@@ -17,6 +17,9 @@ import Forms from "./reactPageSubpages/Forms";
 import UseRef from "./reactPageSubpages/UseRef";
 import HowCreateID from "./reactPageSubpages/HowCreateID";
 import UseReducer from "./reactPageSubpages/UseReducer";
+import UseContext from "./reactPageSubpages/UseContext";
+import CustomHooks from "./reactPageSubpages/CustomHooks";
+import PropTypes from "./reactPageSubpages/PropTypes";
 
 const ReactPage = () => {
   return (
@@ -46,11 +49,18 @@ const ReactPage = () => {
             <NavLink to="howCreateID">How Create ID</NavLink>
           </li>
           <li>
+            <NavLink to="propTypes">Prop Types</NavLink>
+          </li>
+
+          <li>
             <details>
               <summary>Hooks</summary>
               <ul className="toggle">
                 <li>
                   <NavLink to="hook">Hook</NavLink>
+                </li>
+                <li>
+                  <NavLink to="customHooks">Custom Hooks</NavLink>
                 </li>
                 <li>
                   <NavLink to="useState">useState()</NavLink>
@@ -63,6 +73,9 @@ const ReactPage = () => {
                 </li>
                 <li>
                   <NavLink to="useReducer">useReducer()</NavLink>
+                </li>
+                <li>
+                  <NavLink to="useContext">useContext()</NavLink>
                 </li>
               </ul>
             </details>
@@ -99,6 +112,9 @@ const ReactPage = () => {
           <Route path="useRef" element={<UseRef />} />
           <Route path="howCreateID" element={<HowCreateID />} />
           <Route path="useReducer" element={<UseReducer />} />
+          <Route path="useContext" element={<UseContext />} />
+          <Route path="customHooks" element={<CustomHooks />} />
+          <Route path="propTypes" element={<PropTypes />} />
         </Routes>
       </main>
     </div>
