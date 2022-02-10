@@ -1,50 +1,34 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-//? import scss
-import styles from "./TheNavigation.module.scss";
+import "./TheNavigation.scss";
 
 //? import logo
 import logo from "../assets/logo3.svg";
 
-const TheNavigation = ({changeTheme }) => {
+const TheNavigation = ({ changeTheme }) => {
   return (
-    <div className={styles.container}>
-      <img src={logo} className={styles.navLogo} alt="logo" />
+    <div className="NavContainer">
+      <img src={logo} className="navLogo" alt="logo" />
 
-      <nav className={styles.navigation}>
-        <NavLink
-          to="/"
-          className={(navData) => (navData.isActive ? styles.active : "")}
-        >
+      <nav className="navigation">
+        <NavLink to="/" className="">
           Home
         </NavLink>
-        <NavLink
-          to="/html"
-          className={(navData) => (navData.isActive ? styles.active : "")}
-        >
+        <NavLink to="/html" className="">
           HTML
         </NavLink>
-        <NavLink
-          to="/css"
-          className={(navData) => (navData.isActive ? styles.active : "")}
-        >
+        <NavLink to="/css" className="">
           CSS
         </NavLink>
-        <NavLink
-          to="/js"
-          className={(navData) => (navData.isActive ? styles.active : "")}
-        >
+        <NavLink to="/js" className="">
           JS
         </NavLink>
-        <NavLink
-          to="/react"
-          className={(navData) => (navData.isActive ? styles.active : "")}
-        >
+        <NavLink to="/react" className="">
           React
         </NavLink>
       </nav>
-      <button className={styles.btn} onClick={changeTheme}>
+      <button className="btn" onClick={changeTheme}>
         White/Black
       </button>
     </div>
