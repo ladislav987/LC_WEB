@@ -10,7 +10,7 @@
 
     aside {
         grid-column: 1;
-        // grid-row: 2;
+        margin: 50px 0;
 
         li {
             display: block;
@@ -52,10 +52,6 @@
             padding: 10px 20px;
             margin-bottom: 20px;
         }
-    }
-
-    aside {
-        margin-top: 50px;
     }
 
     .toggle {
