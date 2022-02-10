@@ -2,6 +2,8 @@ $theme-1-color: #000;
 $theme-1-page-background-color: #fff;
 $theme-1-nav-background-color: rgb(243, 243, 243);
 
+$theme-1-nav-logo-color: rgb(0, 0, 0);
+
 $theme-1-code-example-background-color: rgb(184, 177, 177);
 
 $theme-1-aside-a-hover-color: antiquewhite;
@@ -10,6 +12,8 @@ $theme-2-color: #fff;
 $theme-2-page-background-color: #000;
 $theme-2-nav-background-color: rgb(61, 61, 61);
 
+$theme-2-nav-logo-color: rgb(226, 15, 15);
+
 $theme-2-code-example-background-color: rgb(83, 83, 83);
 
 $theme-2-aside-a-hover-color: rgb(70, 46, 155);
@@ -17,6 +21,8 @@ $theme-2-aside-a-hover-color: rgb(70, 46, 155);
 $theme-3-color: rgb(238, 115, 115);
 $theme-3-page-background-color: rgb(2, 34, 56);
 $theme-3-nav-background-color: rgb(56, 43, 43);
+
+$theme-3-nav-logo-color: rgb(219, 9, 9);
 
 $theme-3-code-example-background-color: rgb(28, 82, 46);
 
@@ -56,6 +62,8 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
     .code-example {
         background-color: $theme-1-code-example-background-color;
     }
+    .navLogo {
+    }
 }
 .theme-2 {
     .hornaNav {
@@ -79,6 +87,9 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
         summary:active,
         summary:focus {
             background-color: $theme-2-aside-a-hover-color;
+        }
+
+        .navLogo {
         }
     }
 
@@ -108,6 +119,9 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
         summary:active,
         summary:focus {
             background-color: $theme-3-aside-a-hover-color;
+        }
+
+        .navLogo {
         }
     }
 
