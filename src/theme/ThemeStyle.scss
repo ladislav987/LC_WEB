@@ -63,6 +63,7 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
         background-color: $theme-1-code-example-background-color;
     }
     .navLogo {
+        fill: $theme-1-nav-logo-color;
     }
 }
 .theme-2 {
@@ -90,6 +91,7 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
         }
 
         .navLogo {
+            fill: $theme-2-nav-logo-color;
         }
     }
 
@@ -122,6 +124,7 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
         }
 
         .navLogo {
+            color: $theme-3-nav-logo-color;
         }
     }
 
