@@ -9,6 +9,12 @@ import Fetch from "./jsSubpages/Fetch";
 import LogickeOperatory from "./jsSubpages/LogickeOperatory";
 import TernarnyOperator from "./jsSubpages/TernarnyOperator";
 import DynamicObjectProperties from "./jsSubpages/DynamicObjectProperties";
+import AddEventListener from "./jsSubpages/AddEventListener";
+import GetItem from "./jsSubpages/GetItem";
+import SetItem from "./jsSubpages/SetItem";
+import GetElementById from "./jsSubpages/GetElementById";
+import GetElementsByClassName from "./jsSubpages/GetElementsByClassName";
+import Switch from "./jsSubpages/Switch";
 
 const Js = () => {
   return (
@@ -29,6 +35,10 @@ const Js = () => {
             <NavLink to="dynamicObjectProperties">
               Dynamic Object Properties
             </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="switch">Switch</NavLink>
           </li>
 
           <li>
@@ -55,6 +65,31 @@ const Js = () => {
               </ul>
             </details>
           </li>
+
+          <li>
+            <details>
+              <summary>Metódy</summary>
+              <ul className="toggle">
+                <li>
+                  <NavLink to="addEventListener">addEventListener()</NavLink>
+                </li>
+                <li>
+                  <NavLink to="getItem">getItem()</NavLink>
+                </li>
+                <li>
+                  <NavLink to="setItem">setItem()</NavLink>
+                </li>
+                <li>
+                  <NavLink to="getElementById">getElementById()</NavLink>
+                </li>
+                <li>
+                  <NavLink to="getElementsByClassName">
+                    getElementsByClassName()
+                  </NavLink>
+                </li>
+              </ul>
+            </details>
+          </li>
         </ul>
       </aside>
 
@@ -69,6 +104,15 @@ const Js = () => {
             path="dynamicObjectProperties"
             element={<DynamicObjectProperties />}
           />
+          <Route path="addEventListener" element={<AddEventListener />} />
+          <Route path="getItem" element={<GetItem />} />
+          <Route path="setItem" element={<SetItem />} />
+          <Route path="getElementById" element={<GetElementById />} />
+          <Route
+            path="getElementsByClassName"
+            element={<GetElementsByClassName />}
+          />
+          <Route path="switch" element={<Switch />} />
         </Routes>
       </main>
     </div>
