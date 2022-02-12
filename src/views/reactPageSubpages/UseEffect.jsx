@@ -72,7 +72,7 @@ const UseState = () => {
 
       <p>
         V useEffect nemôžeme priamo napísať async funkciu kedže tá vracia
-        promises, musíme vytvoriť osobytnú funkciu.
+        promises, musíme vytvoriť osobitnú funkciu.
       </p>
 
       <div className="code-example">
