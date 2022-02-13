@@ -19,7 +19,7 @@ state- je názov useReducera
 dispatch- funkcia ktorou voláme určitu zmenu podľa typu (dispatch({type: "NO_VALUE"}))
 reducer- je prvý parameter useReducera a taktiež funkcia ktorá manipuluje so stavom
 defaultState- objekt v ktorom sú defaultne hodnoty s ktorými pracujeme
-            - k týmto hodnotam sa pristupuje cet názov useReducera (state.name)
+            - k týmto hodnotam sa pristupuje cez názov useReducera (state.name)
 
 `}</code>
         </pre>
@@ -27,7 +27,7 @@ defaultState- objekt v ktorom sú defaultne hodnoty s ktorými pracujeme
 
       <p>
         Keď chceme zavolať zmenu určitej hodnoty zavoláme funkciu dispatch.
-        Parameter funckie musí byť vždy objekt ( &#123; &#125; ) a do tohto
+        Parameter funkcie musí byť vždy objekt ( &#123; &#125; ) a do tohto
         objektu budeme najčastejšie posielať typ akcie ktorej názov je
         odporučané písať veľkými písmenami.
       </p>
@@ -64,7 +64,10 @@ defaultState- objekt v ktorom sú defaultne hodnoty s ktorými pracujeme
         Dobrým zvykom je aby reducer defaultne vracal new Error aby sme vedeli
         že požadovaný typ akcie neexistuje.
       </p>
-      <p>V returne musíme vždy prve pomocou spread operátora rozbaliť predzchadzajúci stav.</p>
+      <p>
+        V returne musíme vždy prve pomocou spread operátora rozbaliť
+        predzchadzajúci stav.
+      </p>
 
       <div className="code-example">
         <pre>
