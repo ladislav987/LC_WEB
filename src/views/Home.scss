@@ -9,17 +9,73 @@
 
 .containerSkuska {
     padding: 40px;
-    margin-top: 70px;
+    margin: 10px 50px;
     min-height: 200px;
 
     display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .item {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
+    margin: 5px 5px;
     background-color: rgb(141, 51, 51);
     border-radius: 8px;
-    box-shadow: rgba($color: #000000, $alpha: 0.2) 0px 8px;
+    box-shadow: rgba($color: #000000, $alpha: 0.2) 0px 1px;
+
+    animation-duration: 2.5s;
+    animation-name: identifiers2;
+
+    position: relative;
+
+    opacity: 0.8;
+}
+
+.item:hover,
+.item:active {
+    // background-color: gray;
+    opacity: 1;
+}
+
+// @keyframes identifier {
+//     0% {
+//         margin-right: 0.2%;
+//     }
+//     50% {
+//         margin-right: 4%;
+//     }
+//     100% {
+//         margin-right: 0.2%;
+//     }
+// }
+
+@keyframes identifiers {
+    0% {
+        left: -800px;
+        top: -10px;
+        width: 90%;
+        height: auto;
+    }
+    50% {
+        left: 0;
+    }
+    50% {
+        top: 0;
+    }
+    100% {
+        width: 100%;
+        height: auto;
+    }
+}
+@keyframes identifiers2 {
+    from {
+        left: -800px;
+        opacity: 0;
+    }
+    50% {
+        left: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
 }

@@ -1,44 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-import { useTransition, animated, useSpring } from "@react-spring/web";
+// import { useSprings, animated, useSpring } from "@react-spring/web";
 
 import "./Home.scss";
 
-const Home = () => {
-  const [items, setItems] = useState([]);
 
-  //? useTrantiton má dve parametre, prvá je naš useState a druhá je nastavovací objekt
-  const transition = useTransition(items, {
-    from: { x: -100, y: 500, opacity: 0 }, // predtým než sa namontuje
-    enter: (item) => async (next) => {
-      await next({ y: item.y, opacity: 1, delay: item.delay });
-      await next({ x: 0 });
-    }, // zobrazuje konečný stav
-    leave: { x: 100, y: 500, opacity: 0 }, // keď sa dokončí
-  });
+const Home = () => {
+  // const props = useSpring({
+  //   from: { x: -100, y: 500, opacity: 0 },
+  //   to: async (next) => {
+  //     await next({ y: 0, opacity: 1, delay: 1000 });
+  //     await next({ x: 0 });
+  //   },
+  // });
 
   return (
     <div className="appSkuska">
-      <button
-        className="buttonSkuska"
-        onClick={() => {
-          setItems((v) =>
-            v.length
-              ? []
-              : [
-                  { y: 0, delay: 200 },
-                  { y: 10, delay: 400 },
-                  { y: 20, delay: 600 },
-                ]
-          );
-        }}
-      >
-        {items.length ? "un-mount" : "mount"}
-      </button>
+
       <div className="containerSkuska">
-        {transition((style, item) =>
-          item ? <animated.div className="item" style={style} /> : ""
-        )}
+        <NavLink to="/aboutMe" className="item">
+          O mne
+        </NavLink>
+        <NavLink to="/portfolio" className="item">
+          Portfólio
+        </NavLink>
+        <NavLink to="/documentation" className="item">
+          Dokumentácia
+        </NavLink>
+        <NavLink to="/other" className="item">
+          Iné niečo
+        </NavLink>
       </div>
     </div>
   );
