@@ -1,19 +1,21 @@
-.appSkuska{
+.appSkuska {
     text-align: center;
     padding: 40px;
 }
 
-.buttonSkuska{
+.buttonSkuska {
     padding: 8px;
 }
 
-.containerSkuska{
+.containerSkuska {
     padding: 40px;
-    margin-top: 200px;
+    margin-top: 70px;
     min-height: 200px;
+
+    display: grid;
 }
 
-.item{
+.item {
     width: 100px;
     height: 100px;
     margin: 0 auto;
