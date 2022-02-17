@@ -1,9 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 import "./TheNavigation.scss";
 
+import Home from "./Navigations/Home";
+import Documentation from "./Navigations/Documentation";
+
 const TheNavigation = ({ changeTheme }) => {
+
+
+
   return (
     <div className="NavContainer">
       <svg
@@ -32,21 +37,8 @@ const TheNavigation = ({ changeTheme }) => {
       </svg>
 
       <nav className="navigation">
-        <NavLink to="/" className="">
-          Home
-        </NavLink>
-        <NavLink to="/html" className="">
-          HTML
-        </NavLink>
-        <NavLink to="/css" className="">
-          CSS
-        </NavLink>
-        <NavLink to="/js" className="">
-          JS
-        </NavLink>
-        <NavLink to="/react" className="">
-          React
-        </NavLink>
+        <Home />
+        <Documentation />
       </nav>
       <button className="btn" onClick={changeTheme}>
         White/Black
