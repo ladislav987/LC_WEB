@@ -85,10 +85,17 @@
 	}
 }
 
+@media (max-width: 640px) {
+	.documentation_nav {
+		a:first-child {
+			margin-left: 3%;
+		}
+	}
+}
 @media (max-width: 600px) {
 	.documentation_nav {
 		a:first-child {
-			margin-left: 4%;
+			margin-left: 2.6%;
 		}
 		a {
 			padding: 12px 18px;
