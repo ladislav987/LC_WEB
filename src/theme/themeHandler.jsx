@@ -1,7 +1,9 @@
-import { useState, useEffect } from "react";
+import { useEffect, useContext } from "react";
+
+import {Context} from "../App";
 
 const ThemeHandler = () => {
-  const [theme, setTheme] = useState("theme-1");
+  const [theme, setTheme] = useContext(Context);
 
   const changeTheme = () => {
     if (theme === "theme-1") {
@@ -13,13 +15,11 @@ const ThemeHandler = () => {
     if (theme === "theme-3") {
       setMode("theme-1");
     }
-    // console.log(theme);
   };
 
   const setMode = (mode) => {
     window.localStorage.setItem("theme", mode);
     setTheme(mode);
-    // console.log(mode + " tema v local");
   };
 
   useEffect(() => {
@@ -34,10 +34,9 @@ const ThemeHandler = () => {
     if (localTheme === "theme-3") {
       setMode("theme-3");
     }
-
   }, []);
 
-  return [theme, changeTheme];
+  return changeTheme;
 };
 
 export default ThemeHandler;

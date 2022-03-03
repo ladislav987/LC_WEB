@@ -1,0 +1,128 @@
+.page_wrapper {
+    display: grid;
+    grid-template-columns: minmax(25%, 75%) minmax(75%, 25%);
+
+    h1 {
+        grid-column: 2;
+        justify-self: center;
+    }
+
+    aside {
+        grid-column: 1;
+        margin: 50px 0;
+
+        li {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding: 0 30px;
+        }
+
+        a {
+            text-decoration: none;
+
+            padding: 5px 15px;
+            border-radius: 4px;
+
+            font-size: 18px;
+        }
+    }
+
+    main {
+        grid-column: 2;
+
+        p {
+            margin-right: 10%;
+            padding: 15px 0;
+        }
+
+        .code-example {
+            max-width: 91%;
+
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            overflow: auto;
+        }
+    }
+
+    .toggle {
+        margin: 10px 0;
+    }
+
+    summary:hover,
+    summary:active,
+    summary:focus {
+        cursor: pointer;
+        transition: 0.5s all ease;
+    }
+    a:hover,
+    a:active,
+    a:focus {
+        cursor: pointer;
+        transition: 0.5s all ease;
+    }
+}
+
+@media (max-width: 700px) {
+    aside {
+        display: none;
+    }
+
+    .page_wrapper {
+        grid-template-columns: minmax(5%, 95%) minmax(95%, 5%);
+    }
+}
+
+@media (min-width: 701px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .page_wrapper {
+        main {
+            .code-example {
+                max-width: 96%;
+            }
+        }
+    }
+}
+
+@media (max-width: 515px) {
+    .page_wrapper {
+        main {
+            .code-example {
+                padding: 10px 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .page_wrapper {
+        main {
+            p {
+                margin-right: 5%;
+            }
+            .code-example {
+                max-width: 87%;
+
+                padding: 10px 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .page_wrapper {
+        main {
+            .code-example {
+                max-width: 84%;
+            }
+        }
+    }
+}

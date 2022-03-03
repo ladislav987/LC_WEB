@@ -1,45 +1,50 @@
-import React from "react";
-
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
-//? komponenty
-import TheNavigation from "./component/TheNavigation";
+// CSS
+import "./scss/themeStyle.scss";
+import "./scss/topNavigation.scss";
 
-//? views
-import Home from "./views/Home";
-import Html from "./views/Html";
-import Css from "./views/Css";
-import Js from "./views/Js";
-import ReactPage from "./views/ReactPage";
+import FirstMenu from "./views/FirstMenu";
 
-//?dark_light_theme
-import ThemeHandler from "./theme/ThemeHandler";
-import "./theme/ThemeStyle.scss";
+import AboutMe from "./views/FirstMenuSubpages/AboutMe";
+import Portfolio from "./views/FirstMenuSubpages/Portfolio";
+import Documentation from "./views/FirstMenuSubpages/Documentation";
+import Other from "./views/FirstMenuSubpages/Other";
+
+import Html from "./views/documentationSubpages/Html";
+import Css from "./views/documentationSubpages/Css";
+import Js from "./views/documentationSubpages/Js";
+import ReactPage from "./views/documentationSubpages/ReactPage";
+
+const Context = React.createContext();
 
 const App = () => {
-  //?dark_light_theme
-  const [theme, changeTheme] = ThemeHandler();
+  //? Drží one source of truth
+  const [theme, setTheme] = useState("theme-1");
 
   return (
-    <div className={`App ${theme}`}>
-      <div className="container">
-        <header>
-          <nav className="hornaNav">
-            <TheNavigation changeTheme={changeTheme} />
-          </nav>
-        </header>
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/html/*" element={<Html />} />
-            <Route path="/css/*" element={<Css />} />
-            <Route path="/js/*" element={<Js />} />
-            <Route path="/react/*" element={<ReactPage />} />
-          </Routes>
-        </main>
+    <Context.Provider value={[theme, setTheme]}>
+      <div className={`App ${theme}`}>
+        <div className="container">
+          <main>
+            <Routes>
+              <Route path="/*" element={<FirstMenu />} />
+              <Route path="/aboutMe/*" element={<AboutMe />} />
+              <Route path="/portfolio/*" element={<Portfolio />} />
+              <Route path="/documentation/*" element={<Documentation />} />
+              <Route path="/other/*" element={<Other />} />
+
+              <Route path="/html/*" element={<Html />} />
+              <Route path="/css/*" element={<Css />} />
+              <Route path="/js/*" element={<Js />} />
+              <Route path="/react/*" element={<ReactPage />} />
+            </Routes>
+          </main>
+        </div>
       </div>
-    </div>
+    </Context.Provider>
   );
 };
 
-export default App;
+export { App, Context };
