@@ -17,7 +17,7 @@ const Svg = () => {
             fontWeight="bold"
             textAnchor="start"
             fontFamily="'Fraunces'"
-            fontSize="28"
+            fontSize="26"
             id="svg_3"
             y="94.25404"
             x="77.06263"
