@@ -1,4 +1,4 @@
-import { useEffect, useContext } from "react";
+import { useEffect, useContext, useCallback } from "react";
 
 import {Context} from "../App";
 
@@ -17,10 +17,14 @@ const ThemeHandler = () => {
     }
   };
 
-  const setMode = (mode) => {
-    window.localStorage.setItem("theme", mode);
-    setTheme(mode);
-  };
+  const setMode = useCallback(
+    (mode) => {
+      window.localStorage.setItem("theme", mode);
+      setTheme(mode);
+    },
+    [setTheme]
+  );
+
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme");
@@ -34,8 +38,7 @@ const ThemeHandler = () => {
     if (localTheme === "theme-3") {
       setMode("theme-3");
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [setMode]);
 
   return changeTheme;
 };
