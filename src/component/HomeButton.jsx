@@ -3,15 +3,17 @@ import { NavLink } from "react-router-dom";
 
 import { AiOutlineHome } from "react-icons/ai";
 
+import { IconContext } from "react-icons";
+
 const HomeButton = () => {
   return (
-    <>
-      <button className="btn">
+    <IconContext.Provider value={{ size: "2em" }}>
+      <button className="btn home_btn">
         <NavLink to="/">
           <AiOutlineHome />
         </NavLink>
       </button>
-    </>
+    </IconContext.Provider>
   );
 };
 
