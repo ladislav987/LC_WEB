@@ -9,14 +9,14 @@ const Documentation = () => {
   return (
     <div>
       <header>
-        <nav className="hornaNav navigation">
+        <nav className="topNavigationContainer">
           <Svg />
           <HomeButton />
           <ThemeButton />
         </nav>
       </header>
-      <div className="appSkuska">
-        <div className="containerSkuska">
+      <div className="gridMenu">
+        <div className="gridMenuContainer">
           <NavLink to="/html" className="item">
             HTML
           </NavLink>

@@ -8,7 +8,7 @@ const Other = () => {
   return (
     <>
       <header>
-        <nav className="hornaNav">
+        <nav className="topNavigationContainer">
           <Svg />
           <HomeButton />
           <ThemeButton />

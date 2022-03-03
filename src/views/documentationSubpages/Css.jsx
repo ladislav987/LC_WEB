@@ -6,20 +6,20 @@ import HomeButton from "../../component/HomeButton";
 import DocumentationNav from "../../component/DocumentationNav";
 import ThemeButton from "../../component/ThemeButton";
 
-import Cursor from "../cssSubpages/Cursor";
+import Cursor from "../cssSubpages/Cursor.jsx";
 
 const Css = () => {
   return (
     <>
       <header>
-        <nav className="hornaNav">
+        <nav className="topNavigationContainer">
           <Svg />
           <HomeButton />
           <DocumentationNav />
           <ThemeButton />
         </nav>
       </header>
-      <div className="page-wrapper">
+      <div className="page_wrapper">
         <h1>CSS sekcia</h1>
 
         <aside>

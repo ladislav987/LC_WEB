@@ -1,23 +1,22 @@
-import React from 'react'
+import React from "react";
 
-import HomeButton from '../../component/HomeButton';
-import Svg from '../../component/Svg';
-import ThemeButton from '../../component/ThemeButton';
+import HomeButton from "../../component/HomeButton";
+import Svg from "../../component/Svg";
+import ThemeButton from "../../component/ThemeButton";
 
 const AboutMe = () => {
-
   return (
     <>
       <header>
-        <nav className="hornaNav">
+        <nav className="topNavigationContainer">
           <Svg />
-          <HomeButton/>
+          <HomeButton />
           <ThemeButton />
         </nav>
       </header>
       About Me !
     </>
   );
-}
+};
 
-export default AboutMe
+export default AboutMe;

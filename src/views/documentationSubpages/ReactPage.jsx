@@ -28,7 +28,7 @@ const ReactPage = () => {
   return (
     <>
       <header>
-        <nav className="hornaNav">
+        <nav className="topNavigationContainer">
           <Svg />
           <HomeButton />
           <DocumentationNav />
@@ -36,7 +36,7 @@ const ReactPage = () => {
         </nav>
       </header>
 
-      <div className="page-wrapper">
+      <div className="page_wrapper">
         <h1>React sekcia</h1>
         <aside>
           <ul>

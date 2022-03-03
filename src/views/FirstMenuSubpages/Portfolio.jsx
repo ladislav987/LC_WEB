@@ -7,7 +7,7 @@ const Portfolio = () => {
   return (
     <>
       <header>
-        <nav className="hornaNav">
+        <nav className="topNavigationContainer">
           <Svg />
           <HomeButton />
           <ThemeButton />

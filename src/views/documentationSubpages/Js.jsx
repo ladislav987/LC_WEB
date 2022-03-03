@@ -23,14 +23,14 @@ const Js = () => {
   return (
     <>
       <header>
-        <nav className="hornaNav">
+        <nav className="topNavigationContainer">
           <Svg />
           <HomeButton />
           <DocumentationNav />
           <ThemeButton />
         </nav>
       </header>
-      <div className="page-wrapper">
+      <div className="page_wrapper">
         <h1>JS sekcia</h1>
 
         <aside>
