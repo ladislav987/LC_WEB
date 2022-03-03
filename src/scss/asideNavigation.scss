@@ -1,0 +1,23 @@
+.nav_menu {
+  background-color: rgba(200, 200, 200, 0.85);
+  width: 200px;
+  height: Calc(100vh - 56px);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 56px;
+  left: -100%;
+  transition: 850ms;
+
+  text-align: center;
+}
+
+.nav_menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.navbar {
+  grid-column: 1;
+  grid-row: 1;
+}
