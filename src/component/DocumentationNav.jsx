@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const DocumentationNav = () => {
   return (
-    <>
+    <div className="documentation_nav">
       <NavLink to="/html" className="">
         HTML
       </NavLink>
@@ -17,7 +17,7 @@ const DocumentationNav = () => {
       <NavLink to="/react" className="">
         React
       </NavLink>
-    </>
+    </div>
   );
 };
 

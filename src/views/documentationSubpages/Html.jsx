@@ -11,28 +11,25 @@ import "../../scss/views.scss";
 import Details from "../htmlSubpages/Details";
 import Summary from "../htmlSubpages/Summary";
 
+import HtmlMenu from "./HtmlMenu";
+import HtmlSidebar from "./HtmlSidebar";
+
 const Html = () => {
   return (
     <>
       <header>
-        <nav className="hornaNav">
+        <nav className="topNavigationContainer">
           <Svg />
           <HomeButton />
-          <DocumentationNav/>
+          <DocumentationNav />
           <ThemeButton />
         </nav>
       </header>
-      <div className="page-wrapper">
+      <div className="page_wrapper">
         <h1>HTML stránka</h1>
+        <HtmlSidebar />
         <aside>
-          <ul>
-            <li>
-              <NavLink to="details">&#60;details&gt;</NavLink>
-            </li>
-            <li>
-              <NavLink to="summary">&#60;summary&gt;</NavLink>
-            </li>
-          </ul>
+          <HtmlMenu />
         </aside>
 
         <main>

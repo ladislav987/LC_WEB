@@ -20,7 +20,7 @@ const Props = () => {
       </div>
 
       <p>
-        V komponente TheNavigation (rodič) vznikde premená brend === "main". Do
+        V komponente TopNavigation (rodič) vznikde premená brend === "main". Do
         potomka môžeme pošlať props s názvom "props" podľa konvencie
       </p>
 

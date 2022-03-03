@@ -1,8 +1,9 @@
-import React, {useState} from "react";
-
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import "./scss/ThemeStyle.scss";
+// CSS
+import "./scss/themeStyle.scss";
+import "./scss/topNavigation.scss";
 
 import FirstMenu from "./views/FirstMenu";
 
@@ -11,11 +12,10 @@ import Portfolio from "./views/FirstMenuSubpages/Portfolio";
 import Documentation from "./views/FirstMenuSubpages/Documentation";
 import Other from "./views/FirstMenuSubpages/Other";
 
-import Html from "./views/documentationSubpages/Html"
+import Html from "./views/documentationSubpages/Html";
 import Css from "./views/documentationSubpages/Css";
 import Js from "./views/documentationSubpages/Js";
 import ReactPage from "./views/documentationSubpages/ReactPage";
-
 
 const Context = React.createContext();
 
@@ -47,4 +47,4 @@ const App = () => {
   );
 };
 
-export {App, Context};
+export { App, Context };

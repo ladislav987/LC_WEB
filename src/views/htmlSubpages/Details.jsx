@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Details = () => {
   return (
-    <div>
+    <>
       <p>
         Element v sebe drží informácie ktoré su viditelné len v "open" stave.
         Label tohto elementu sa zobrazí pomocou{" "}
@@ -18,7 +18,7 @@ const Details = () => {
 </details>`}</code>
         </pre>
       </div>
-    </div>
+    </>
   );
 };
 
