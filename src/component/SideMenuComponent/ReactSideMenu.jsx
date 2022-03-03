@@ -3,7 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const ReactSideMenu = (props) => {
   const handleClick = () => {
-    props.onClickToMenu();
+    if (window.innerWidth < 700) {
+      props.onClickToMenu();
+    }
   };
 
   return (

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 const CssSideMenu = (props) => {
   const handleClick = () => {
-    props.onClickToMenu();
+    if (window.innerWidth < 700) {
+      props.onClickToMenu();
+    }
   };
 
   return (
@@ -19,4 +21,4 @@ const CssSideMenu = (props) => {
   );
 };
 
-export default CssSideMenu
+export default CssSideMenu;
