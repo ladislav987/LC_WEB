@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, NavLink } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 
 import Svg from "../../component/Svg";
 import HomeButton from "../../component/HomeButton";
@@ -24,6 +24,10 @@ import UseContext from "../reactPageSubpages/UseContext";
 import CustomHooks from "../reactPageSubpages/CustomHooks";
 import PropTypes from "../reactPageSubpages/PropTypes";
 
+
+import Sidebar from "../../component/Sidebar";
+import ReactSideMenu from "../../component/SideMenuComponent/ReactSideMenu";
+
 const ReactPage = () => {
   return (
     <>
@@ -38,75 +42,9 @@ const ReactPage = () => {
 
       <div className="page_wrapper">
         <h1>React sekcia</h1>
+        <Sidebar />
         <aside>
-          <ul>
-            <li>
-              <NavLink to="props">Props</NavLink>
-            </li>
-            <li>
-              <NavLink to="propsChildren">Props Children</NavLink>
-            </li>
-            <li>
-              <NavLink to="fragment">Fragment</NavLink>
-            </li>
-            <li>
-              <NavLink to="prevState">prevState</NavLink>
-            </li>
-            <li>
-              <NavLink to="multipleReturns">MultipleReturns</NavLink>
-            </li>
-            <li>
-              <NavLink to="forms">Forms</NavLink>
-            </li>
-            <li>
-              <NavLink to="howCreateID">How Create ID</NavLink>
-            </li>
-            <li>
-              <NavLink to="propTypes">Prop Types</NavLink>
-            </li>
-
-            <li>
-              <details>
-                <summary>Hooks</summary>
-                <ul className="toggle">
-                  <li>
-                    <NavLink to="hook">Hook</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="customHooks">Custom Hooks</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="useState">useState()</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="useEffect">useEffect()</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="useRef">useRef()</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="useReducer">useReducer()</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="useContext">useContext()</NavLink>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>Funkcie</summary>
-                <ul className="toggle">
-                  <li>
-                    <NavLink to="callbackFunction">Callback funkcia</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="map">map()</NavLink>
-                  </li>
-                </ul>
-              </details>
-            </li>
-          </ul>
+          <ReactSideMenu/>
         </aside>
 
         <main>

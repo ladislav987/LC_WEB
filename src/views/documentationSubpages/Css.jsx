@@ -7,6 +7,8 @@ import DocumentationNav from "../../component/DocumentationNav";
 import ThemeButton from "../../component/ThemeButton";
 
 import Cursor from "../cssSubpages/Cursor.jsx";
+import CssSideMenu from "../../component/SideMenuComponent/CssSideMenu";
+import Sidebar from "../../component/Sidebar";
 
 const Css = () => {
   return (
@@ -21,13 +23,9 @@ const Css = () => {
       </header>
       <div className="page_wrapper">
         <h1>CSS sekcia</h1>
-
+        <Sidebar />
         <aside>
-          <ul>
-            <li>
-              <NavLink to="cursor">Cursor</NavLink>
-            </li>
-          </ul>
+          <CssSideMenu />
         </aside>
 
         <main>

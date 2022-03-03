@@ -11,8 +11,8 @@ import "../../scss/views.scss";
 import Details from "../htmlSubpages/Details";
 import Summary from "../htmlSubpages/Summary";
 
-import HtmlMenu from "./HtmlMenu";
-import HtmlSidebar from "./HtmlSidebar";
+import HtmlSideMenu from "../../component/SideMenuComponent/HtmlSideMenu";
+import Sidebar from "../../component/Sidebar";
 
 const Html = () => {
   return (
@@ -27,9 +27,9 @@ const Html = () => {
       </header>
       <div className="page_wrapper">
         <h1>HTML stránka</h1>
-        <HtmlSidebar />
+        <Sidebar />
         <aside>
-          <HtmlMenu />
+          <HtmlSideMenu />
         </aside>
 
         <main>

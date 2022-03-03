@@ -19,6 +19,9 @@ import GetElementById from "../jsSubpages/GetElementById";
 import GetElementsByClassName from "../jsSubpages/GetElementsByClassName";
 import Switch from "../jsSubpages/Switch";
 
+import JsSideMenu from "../../component/SideMenuComponent/JsSideMenu";
+import Sidebar from "../../component/Sidebar";
+
 const Js = () => {
   return (
     <>
@@ -32,77 +35,9 @@ const Js = () => {
       </header>
       <div className="page_wrapper">
         <h1>JS sekcia</h1>
-
+        <Sidebar />
         <aside>
-          <ul>
-            <li>
-              <NavLink to="promises">Promises</NavLink>
-            </li>
-
-            <li>
-              <NavLink to="async">Async</NavLink>
-            </li>
-
-            <li>
-              <NavLink to="dynamicObjectProperties">
-                Dynamic Object Properties
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink to="switch">Switch</NavLink>
-            </li>
-
-            <li>
-              <details>
-                <summary>Operátory</summary>
-                <ul className="toggle">
-                  <li>
-                    <NavLink to="logickeOperatory">Logické Operátory</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="ternarnyOperator">Ternárny Operátor</NavLink>
-                  </li>
-                </ul>
-              </details>
-            </li>
-
-            <li>
-              <details>
-                <summary>Funkcie</summary>
-                <ul className="toggle">
-                  <li>
-                    <NavLink to="fetch">fetch()</NavLink>
-                  </li>
-                </ul>
-              </details>
-            </li>
-
-            <li>
-              <details>
-                <summary>Metódy</summary>
-                <ul className="toggle">
-                  <li>
-                    <NavLink to="addEventListener">addEventListener()</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="getItem">getItem()</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="setItem">setItem()</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="getElementById">getElementById()</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="getElementsByClassName">
-                      getElementsByClassName()
-                    </NavLink>
-                  </li>
-                </ul>
-              </details>
-            </li>
-          </ul>
+          <JsSideMenu />
         </aside>
 
         <main>
