@@ -34,6 +34,7 @@ const ThemeHandler = () => {
     if (localTheme === "theme-3") {
       setMode("theme-3");
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return changeTheme;
