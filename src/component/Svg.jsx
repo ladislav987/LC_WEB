@@ -4,7 +4,7 @@ const Svg = () => {
   return (
     <>
       <svg
-        width="255"
+        width="155"
         height="40"
         xmlns="http://www.w3.org/2000/svg"
         className="navLogo"
@@ -23,7 +23,7 @@ const Svg = () => {
             x="77.06263"
             strokeWidth="0"
           >
-            LC Web Docs
+            LC Web
           </text>
         </g>
       </svg>
