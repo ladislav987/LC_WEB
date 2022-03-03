@@ -4,6 +4,8 @@ import { Context } from "../App";
 
 import ThemeHandler from "../theme/themeHandler";
 
+import { IconContext } from "react-icons";
+
 import {
   BsFillSunFill,
   BsFillMoonFill,
@@ -24,11 +26,13 @@ const ThemeButton = () => {
      Component = BsFillCloudMoonFill;
    }
   return (
-    <>
-      <button className="btn" onClick={ThemeHandler()}>
+    <IconContext.Provider
+      value={{ size:"2em" }}
+    >
+      <button className="btn theme_btn" onClick={ThemeHandler()}>
         <Component />
       </button>
-    </>
+    </IconContext.Provider>
   );
 };
 
