@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Details = () => {
   return (
-    <div>
+    <>
       <p>
         &#60;summary&gt; je HTML elemente špecifický ako legenda pre{" "}
         <NavLink to="/html/details">&#60;details&gt;</NavLink>{" "}
@@ -17,7 +17,7 @@ const Details = () => {
 </details>`}</code>
         </pre>
       </div>
-    </div>
+    </>
   );
 };
 
