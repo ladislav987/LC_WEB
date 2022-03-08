@@ -1,51 +1,104 @@
-//! VARIABLES
-//? ---------------Theme1---------------
+//! --------------------VARIABLES--------------------
+
+//? --------------------Theme1--------------------
+
+//* Farba textu globalne
 $theme-1-color: #000;
+
+//* Farba pozadia stránky
 $theme-1-page-background-color: #fff;
+
+//* Top navigácia
 $theme-1-nav-background-color: #c8c8c8;
 $theme-1-nav-border-color: #b0b0b0;
+$theme-1-nav-logo-color: rgb(0, 0, 0);
+$theme-1-nav-a-hover-color: rgb(240, 178, 98);
 
+//* Tile grid items
+$theme-1-item-background-color: #b0b0b0;
 $theme-1-item-border-color: #b0b0b0;
 
-$theme-1-nav-logo-color: rgb(0, 0, 0);
-
+//* Farba pozadia code example
 $theme-1-code-example-background-color: rgb(184, 177, 177);
 
-$theme-1-aside-a-hover-color: antiquewhite;
+//* Side menu
+$theme-1-sidemenu-hamburger-color: rgb(0, 0, 0);
+$theme-1-sidemenu-a-hover-color: rgb(105, 67, 17);
 
-//? ---------------Theme2---------------
+//? --------------------Theme2--------------------
+
+//* Farba textu globalne
 $theme-2-color: #fff;
+
+//* Farba pozadia stránky
 $theme-2-page-background-color: #000;
+
+//* Top navigácia
 $theme-2-nav-background-color: rgb(61, 61, 61);
-
+$theme-2-nav-border-color: #b0b0b0;
 $theme-2-nav-logo-color: rgb(226, 15, 15);
+$theme-2-nav-a-hover-color: rgba(231, 80, 10, 0.651);
 
+//* Tile grid items
+$theme-2-item-background-color: #b0b0b0;
+$theme-2-item-border-color: #b0b0b0;
+
+//* Farba pozadia code example
 $theme-2-code-example-background-color: rgb(83, 83, 83);
 
-$theme-2-aside-a-hover-color: rgb(70, 46, 155);
+//* Side menu
+$theme-2-sidemenu-hamburger-color: rgb(255, 255, 255);
+$theme-2-sidemenu-a-hover-color: rgb(70, 46, 155);
 
-//? ---------------Theme3---------------
+//? --------------------Theme3--------------------
+
+//* Farba textu globalne
 $theme-3-color: rgb(238, 115, 115);
+
+//* Farba pozadia stránky
 $theme-3-page-background-color: rgb(2, 34, 56);
+
+//* Top navigácia
 $theme-3-nav-background-color: rgb(56, 43, 43);
-
+$theme-3-nav-border-color: #b0b0b0;
 $theme-3-nav-logo-color: rgb(219, 9, 9);
+$theme-3-nav-a-hover-color: rgb(45, 209, 24);
 
+//* Tile grid items
+$theme-3-item-background-color: #b0b0b0;
+$theme-3-item-border-color: #b0b0b0;
+
+//* Farba pozadia code example
 $theme-3-code-example-background-color: rgb(28, 82, 46);
 
-$theme-3-aside-a-hover-color: rgb(223, 89, 11);
+//* Side menu
+$theme-3-sidemenu-hamburger-color: rgb(235, 14, 14);
+$theme-3-sidemenu-a-hover-color: rgb(223, 89, 11);
 
+//! --------------------INITIALIZATION--------------------
+
+//? --------------------General--------------------
+//* Container pre celu stranku v app.jsx
 .container {
     min-height: 100vh;
-    // transition: background-color 5.3s linear;
     transition: background-color 0.6s cubic-bezier(0.12, 0, 0.39, 0), color 0.6s cubic-bezier(0.12, 0, 0.39, 0);
 }
 
+//? --------------------Theme1--------------------
 .theme-1 {
+    //* Top navigácia
     .topNavigationContainer {
         background-color: $theme-1-nav-background-color;
         border-bottom: 1px solid $theme-1-nav-border-color;
+
+        a:hover,
+        a:active,
+        a:focus {
+            background-color: $theme-1-nav-a-hover-color;
+        }
     }
+
+    //* Container celej stránky
     .container {
         background-color: $theme-1-page-background-color;
         color: $theme-1-color;
@@ -67,21 +120,51 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
         // }
     }
 
+    //* Tile grid items
     .item {
+        background-color: $theme-1-item-background-color;
         border: 1px solid $theme-1-item-border-color;
     }
 
+    //* Code example
     .code-example {
         background-color: $theme-1-code-example-background-color;
     }
+
+    //* Logo v top navigácii
     .navLogo {
         fill: $theme-1-nav-logo-color;
     }
+
+    //* Side menu
+    .sidebar {
+        a {
+            color: $theme-1-sidemenu-hamburger-color;
+        }
+    }
+    .sidebar_menu {
+        a:hover,
+        a:active,
+        a:focus {
+            background-color: $theme-1-sidemenu-a-hover-color;
+        }
+    }
 }
+
+//? --------------------Theme2--------------------
 .theme-2 {
+    //* Top navigácia
     .topNavigationContainer {
         background-color: $theme-2-nav-background-color;
+        border-bottom: 1px solid $theme-2-nav-border-color;
+
+        a:hover,
+        a:active,
+        a:focus {
+            background-color: $theme-2-nav-a-hover-color;
+        }
     }
+    //* Container celej stránky
     .container {
         background-color: $theme-2-page-background-color;
         color: $theme-2-color;
@@ -101,20 +184,54 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
         // summary:focus {
         //     background-color: $theme-2-aside-a-hover-color;
         // }
-
-        .navLogo {
-            fill: $theme-2-nav-logo-color;
-        }
     }
 
+    //* Tile grid items
+    .item {
+        background-color: $theme-2-item-background-color;
+        border: 1px solid $theme-2-item-border-color;
+    }
+
+    //* Code example
     .code-example {
         background-color: $theme-2-code-example-background-color;
     }
+
+    //* Logo v top navigácii
+    .navLogo {
+        fill: $theme-2-nav-logo-color;
+    }
+
+    //* Side menu
+    .sidebar {
+        a {
+            color: $theme-2-sidemenu-hamburger-color;
+        }
+    }
+    .sidebar_menu {
+        a:hover,
+        a:active,
+        a:focus {
+            background-color: $theme-2-sidemenu-a-hover-color;
+        }
+    }
 }
+
+//? --------------------Theme3--------------------
 .theme-3 {
+    //* Top navigácia
     .topNavigationContainer {
         background-color: $theme-3-nav-background-color;
+        border-bottom: 1px solid $theme-3-nav-border-color;
+
+        a:hover,
+        a:active,
+        a:focus {
+            background-color: $theme-3-nav-a-hover-color;
+        }
     }
+
+    //* Container celej stránky
     .container {
         background-color: $theme-3-page-background-color;
         color: $theme-3-color;
@@ -134,13 +251,35 @@ $theme-3-aside-a-hover-color: rgb(223, 89, 11);
         // summary:focus {
         //     background-color: $theme-3-aside-a-hover-color;
         // }
-
-        .navLogo {
-            color: $theme-3-nav-logo-color;
-        }
     }
 
+    //* Tile grid items
+    .item {
+        background-color: $theme-3-item-background-color;
+        border: 1px solid $theme-3-item-border-color;
+    }
+
+    //* Code example
     .code-example {
         background-color: $theme-3-code-example-background-color;
+    }
+
+    //* Logo v top navigácii
+    .navLogo {
+        color: $theme-3-nav-logo-color;
+    }
+
+    //* Side menu
+    .sidebar {
+        a {
+            color: $theme-3-sidemenu-hamburger-color;
+        }
+    }
+    .sidebar_menu {
+        a:hover,
+        a:active,
+        a:focus {
+            background-color: $theme-3-sidemenu-a-hover-color;
+        }
     }
 }
