@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: minmax(25%, 75%) minmax(75%, 25%);
 
+    animation-duration: 1.5s;
+    animation-name: page_wrapper_animation;
+
     h1 {
         grid-column: 2;
         justify-self: center;
@@ -62,6 +65,16 @@
     a:focus {
         cursor: pointer;
         transition: 0.5s all ease;
+    }
+
+    //? keyframes pre animáciu
+    @keyframes page_wrapper_animation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 }
 
