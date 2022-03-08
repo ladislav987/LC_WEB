@@ -17,12 +17,10 @@
 
 //? jednotlive dlaždice
 .item {
-    background-color: #b0b0b0;
-
     box-shadow: rgba($color: #000000, $alpha: 0.2) 0px 1px;
 
-    animation-duration: 2.5s;
-    animation-name: identifiers;
+    animation-duration: 1.5s;
+    animation-name: from_left;
 
     position: relative;
 
@@ -40,7 +38,7 @@
 }
 
 //? keyframes pre animáciu
-@keyframes identifiers {
+@keyframes from_left {
     from {
         left: -800px;
         opacity: 0;
@@ -50,7 +48,7 @@
     }
 
     to {
-        opacity: 0.8;
+        opacity: 0.7;
     }
 }
 
