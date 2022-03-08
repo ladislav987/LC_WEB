@@ -42,13 +42,13 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="navbar sidebar">
+      <div className="sidebar sidebar">
         <NavLink to="#" className="menu-bars">
           <GiHamburgerMenu onClick={Toogle} />
         </NavLink>
       </div>
 
-      <nav className={sidebar ? "nav_menu active" : "nav_menu"}>
+      <nav className={sidebar ? "sidebar_menu active" : "sidebar_menu"}>
         <Component onClickToMenu={Toogle} />
       </nav>
     </>

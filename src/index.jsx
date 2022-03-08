@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 //? css
 import "./scss/general.scss";
 import "./scss/tileGrid.scss";
-import "./scss/asideNavigation.scss";
+import "./scss/Sidebar.scss";
 
 import { App } from "./App";
 
