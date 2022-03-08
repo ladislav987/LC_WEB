@@ -50,6 +50,19 @@
 
 		font-size: 1.1em;
 	}
+
+	animation-duration: 1.5s;
+    animation-name: animation;
+}
+
+//? keyframes pre animáciu
+@keyframes animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 //! ---------Media Queries---------
