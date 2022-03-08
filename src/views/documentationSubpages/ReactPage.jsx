@@ -44,7 +44,7 @@ const ReactPage = () => {
         <h1>React sekcia</h1>
         <Sidebar />
         <aside>
-          <ReactSideMenu/>
+          <ReactSideMenu />
         </aside>
 
         <main>
