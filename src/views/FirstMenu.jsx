@@ -15,7 +15,7 @@ const FirstMenu = () => {
       </header>
       <div className="gridMenu">
         <div className="gridMenuContainer">
-          <NavLink to="/aboutMe" className="item" id="ja">
+          <NavLink to="/aboutMe" className="item">
             O mne
           </NavLink>
           <NavLink to="/portfolio" className="item">
