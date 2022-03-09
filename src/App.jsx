@@ -27,7 +27,6 @@ const App = () => {
     <Context.Provider value={[theme, setTheme]}>
       <div className={`App ${theme}`}>
         <div className="container">
-          <main>
             <Routes>
               <Route path="/*" element={<FirstMenu />} />
               <Route path="/aboutMe/*" element={<AboutMe />} />
@@ -40,7 +39,6 @@ const App = () => {
               <Route path="/js/*" element={<Js />} />
               <Route path="/react/*" element={<ReactPage />} />
             </Routes>
-          </main>
         </div>
       </div>
     </Context.Provider>
