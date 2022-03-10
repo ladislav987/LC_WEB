@@ -1,0 +1,94 @@
+.container_aboutMe {
+  //   background-color: rgb(240, 192, 192);
+
+  margin: 15px 10px 0 10px;
+
+  //   padding: 0 10px;
+
+  img {
+    width: 55%;
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.introduction{
+    text-align: center;
+}
+
+
+.border {
+  margin-top: 10px;
+  border-bottom: 3px solid grey;
+}
+
+.grid_35_65 {
+  display: grid;
+  grid-template-columns: 35% 65%;
+
+  margin-bottom: 5px;
+}
+
+.grid_20_80 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+
+  margin-bottom: 5px;
+}
+
+.grid_15_45_40 {
+  display: grid;
+  grid-template-columns: 15% 45% 40%;
+
+  margin-bottom: 5px;
+}
+
+.grid_25_25_25_25 {
+  display: grid;
+  grid-template-columns: 15% 35% 15% 35%;
+
+  margin-bottom: 5px;
+}
+
+.grid1_1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.grid2_1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.grid2_3 {
+  grid-column: 2;
+  grid-row: 3;
+}
+.grid2_4 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.grid3_1 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+
+.grid4_1 {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.container_hobbies{
+    margin-left: 8%;
+}
