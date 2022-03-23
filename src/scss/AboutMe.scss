@@ -23,10 +23,9 @@
   }
 }
 
-.introduction{
-    text-align: center;
+.introduction {
+  text-align: center;
 }
-
 
 .border {
   margin-top: 10px;
@@ -40,9 +39,9 @@
   margin-bottom: 5px;
 }
 
-.grid_20_80 {
+.grid_15_85 {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 85%;
 
   margin-bottom: 5px;
 }
@@ -83,12 +82,111 @@
   grid-row: 1;
 }
 
-
 .grid4_1 {
   grid-column: 4;
   grid-row: 1;
 }
 
-.container_hobbies{
-    margin-left: 8%;
+.container_hobbies {
+  margin-left: 8%;
+}
+
+//! ---------Media Queries---------
+
+@media (min-width: 350px) {
+  .container_aboutMe {
+    img {
+      width: 170px;
+    }
+  }
+}
+
+@media (min-width: 370px) {
+  .grid_15_45_40 {
+    grid-template-columns: 15% 40% 40%;
+  }
+
+  .container_hobbies {
+    margin-left: 14%;
+  }
+}
+
+@media (min-width: 400px) {
+  .grid_35_65 {
+    grid-template-columns: 37% 63%;
+  }
+}
+
+@media (min-width: 420px) {
+  .udaje,
+  .znalosti {
+    margin-left: 3%;
+  }
+}
+
+@media (min-width: 440px) {
+  .udaje,
+  .znalosti {
+    margin-left: 13%;
+  }
+
+  .grid_15_45_40 {
+    grid-template-columns: 17% 43% 25%;
+  }
+
+  .grid_15_85 {
+    grid-template-columns: 17% 63%;
+  }
+}
+
+@media (min-width: 500px) {
+  .container_aboutMe {
+    font-size: 1.1rem;
+  }
+
+  .grid_25_25_25_25 {
+    grid-template-columns: 15% 33% 15% 20%;
+  }
+
+  .grid_35_65 {
+    grid-template-columns: 160px 63%;
+  }
+}
+
+@media (min-width: 540px) {
+  // .udaje {
+  //   margin-left: 1%;
+  // }
+
+  // .skuska {
+  //   display: grid;
+  //   grid-template-columns: 26% 33% 15% 20%;
+  //   grid-template-rows: 10% 25% 25% 25%;
+  // }
+
+  // .grid_15_85 {
+  //   display: block;
+  // }
+
+  // .grid_25_25_25_25 {
+  //   display: block;
+  // }
+
+  // .skuska_grid1_1 {
+  //   grid-column: 1;
+  //   grid-row: 1;
+  // }
+
+  // .skuska_grid1_2 {
+  //   grid-column: 1;
+  //   grid-row: 2;
+  // }
+  // .skuska_grid2_2 {
+  //   grid-column: 2;
+  //   grid-row: 2;
+  // }
+  // .skuska_grid5_1 {
+  //   grid-column: 5;
+  //   grid-row: 1;
+  // }
 }
