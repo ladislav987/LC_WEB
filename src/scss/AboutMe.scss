@@ -1,9 +1,5 @@
 .container_aboutMe {
-  //   background-color: rgb(240, 192, 192);
-
   margin: 15px 10px 0 10px;
-
-  //   padding: 0 10px;
 
   img {
     width: 55%;
@@ -21,10 +17,6 @@
   p {
     margin-bottom: 5px;
   }
-}
-
-.introduction {
-  text-align: center;
 }
 
 .border {
@@ -53,38 +45,291 @@
   margin-bottom: 5px;
 }
 
-.grid_25_25_25_25 {
+//! vzdelanie sekcia
+
+.vzdelanie_s1 {
+  grid-area: vzdelanie_s1;
+}
+.vzdelanie_s2 {
+  grid-area: vzdelanie_s2;
+}
+.vzdelanie_s3 {
+  grid-area: vzdelanie_s3;
+}
+.vzdelanie_s4 {
+  grid-area: vzdelanie_s4;
+  padding-bottom: 10px;
+}
+.vzdelanie_s5 {
+  grid-area: vzdelanie_s5;
+}
+.vzdelanie_s6 {
+  grid-area: vzdelanie_s6;
+}
+.vzdelanie_s7 {
+  grid-area: vzdelanie_s7;
+}
+.vzdelanie_s8 {
+  grid-area: vzdelanie_s8;
+  padding-bottom: 15px;
+}
+.vzdelanie_s9 {
+  grid-area: vzdelanie_s9;
+}
+.vzdelanie_s10 {
+  grid-area: vzdelanie_s10;
+}
+
+.vzdelanie {
   display: grid;
-  grid-template-columns: 15% 35% 15% 35%;
+
+  grid-template-columns: 37% 63%;
+
+  grid-template-areas:
+    "vzdelanie_s1 vzdelanie_s2"
+    ". vzdelanie_s3"
+    ". vzdelanie_s4"
+    "vzdelanie_s5 vzdelanie_s6"
+    ". vzdelanie_s7"
+    ". vzdelanie_s8"
+    "vzdelanie_s9 vzdelanie_s10";
+}
+
+//! skusenosti sekcia
+
+.skusenosti_s1 {
+  grid-area: skusenosti_s1;
+}
+.skusenosti_s2 {
+  grid-area: skusenosti_s2;
+}
+.skusenosti_s3 {
+  grid-area: skusenosti_s3;
+}
+
+.skusenosti {
+  display: grid;
+  grid-template-columns: 37% 63%;
+
+  grid-template-areas:
+    "skusenosti_s1 skusenosti_s2"
+    ".  skusenosti_s3";
+}
+
+//! znalosti sekcia
+
+.znalosti_s1 {
+  grid-area: znalosti_s1;
+}
+.znalosti_s2 {
+  grid-area: znalosti_s2;
+
+  grid-template-areas: "znalosti_s2_1 znalosti_s2_2 znalosti_s2_3";
+}
+.znalosti_s2_1 {
+  grid-area: znalosti_s2_1;
+}
+.znalosti_s2_2 {
+  grid-area: znalosti_s2_2;
+}
+.znalosti_s2_3 {
+  grid-area: znalosti_s2_3;
+}
+.znalosti_s3 {
+  grid-area: znalosti_s3;
+
+  grid-template-areas: "znalosti_s3_1 znalosti_s3_2 znalosti_s3_3";
+}
+.znalosti_s3_1 {
+  grid-area: znalosti_s3_1;
+}
+.znalosti_s3_2 {
+  grid-area: znalosti_s3_2;
+}
+.znalosti_s3_3 {
+  grid-area: znalosti_s3_3;
+}
+.znalosti_s4 {
+  grid-area: znalosti_s4;
+  grid-template-areas: "znalosti_s4_1 znalosti_s4_2 znalosti_s4_3";
+}
+.znalosti_s4_1 {
+  grid-area: znalosti_s4_1;
+}
+.znalosti_s4_2 {
+  grid-area: znalosti_s4_2;
+}
+.znalosti_s4_3 {
+  grid-area: znalosti_s4_3;
+}
+.znalosti_s5 {
+  grid-area: znalosti_s5;
+  grid-template-areas: "znalosti_s5_1 znalosti_s5_2 znalosti_s5_3";
+}
+.znalosti_s5_1 {
+  grid-area: znalosti_s5_1;
+}
+.znalosti_s5_2 {
+  grid-area: znalosti_s5_2;
+}
+.znalosti_s5_3 {
+  grid-area: znalosti_s5_3;
+}
+.znalosti_s6 {
+  grid-area: znalosti_s6;
+  grid-template-areas: "znalosti_s6_1 znalosti_s6_2 znalosti_s6_3";
+}
+.znalosti_s6_1 {
+  grid-area: znalosti_s6_1;
+}
+.znalosti_s6_2 {
+  grid-area: znalosti_s6_2;
+}
+.znalosti_s6_3 {
+  grid-area: znalosti_s6_3;
+}
+
+.znalosti {
+  display: grid;
+  grid-template-areas:
+    "znalosti_s1"
+    "znalosti_s2"
+    "znalosti_s3"
+    "znalosti_s4"
+    "znalosti_s5"
+    "znalosti_s6";
+}
+
+.znalosti_s2,
+.znalosti_s3,
+.znalosti_s4,
+.znalosti_s5,
+.znalosti_s6 {
+  display: grid;
+  justify-content: start;
+
+  grid-template-columns: 17% 49% 32%;
+}
+
+//! udaje sekcia
+
+.udaje_s1 {
+  grid-area: udaje_s1;
+}
+.udaje_s2 {
+  grid-area: udaje_s2;
+
+  grid-template-areas: "udaje_s2_1 udaje_s2_2";
+}
+.udaje_s2_1 {
+  grid-area: udaje_s2_1;
+}
+.udaje_s2_2 {
+  grid-area: udaje_s2_2;
+}
+.udaje_s3 {
+  grid-area: udaje_s3;
+
+  grid-template-areas: "udaje_s3_1 udaje_s3_2";
+}
+.udaje_s3_1 {
+  grid-area: udaje_s3_1;
+}
+.udaje_s3_2 {
+  grid-area: udaje_s3_2;
+}
+.udaje_s4 {
+  grid-area: udaje_s4;
+  grid-template-areas: "udaje_s4_1 udaje_s4_2";
+}
+.udaje_s4_1 {
+  grid-area: udaje_s4_1;
+}
+.udaje_s4_2 {
+  grid-area: udaje_s4_2;
+}
+.udaje_s5 {
+  grid-area: udaje_s5;
+  grid-template-areas: "udaje_s5_1 udaje_s5_2";
+}
+.udaje_s5_1 {
+  grid-area: udaje_s5_1;
+}
+.udaje_s5_2 {
+  grid-area: udaje_s5_2;
+}
+.udaje_s6 {
+  grid-area: udaje_s6;
+  grid-template-areas: "udaje_s6_1 udaje_s6_2";
+}
+.udaje_s6_1 {
+  grid-area: udaje_s6_1;
+}
+.udaje_s6_2 {
+  grid-area: udaje_s6_2;
+}
+
+.udaje {
+  display: grid;
+
+  grid-template-areas:
+    "udaje_s1"
+    "udaje_s2"
+    "udaje_s3"
+    "udaje_s4"
+    "udaje_s5"
+    "udaje_s6";
+}
+
+.udaje_s2,
+.udaje_s3,
+.udaje_s4,
+.udaje_s5,
+.udaje_s6 {
+  display: grid;
+  justify-content: start;
+
+  grid-template-columns: 17% 82%;
+}
+
+//! zaujmy sekcia
+
+.zaujmy_s2,
+.zaujmy_s3,
+.zaujmy_s4,
+.zaujmy_s5 {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 45% 55%;
+}
+
+.zaujmy_s1 {
+  grid-area: zaujmy_s1;
+}
+.zaujmy_s2 {
+  grid-area: zaujmy_s2;
+}
+.zaujmy_s3 {
+  grid-area: zaujmy_s3;
+}
+.zaujmy_s4 {
+  grid-area: zaujmy_s4;
+}
+.zaujmy_s5 {
+  grid-area: zaujmy_s5;
+}
+
+.zaujmy {
+  display: grid;
+
+  grid-template-areas:
+    "zaujmy_s1 zaujmy_s1"
+    "zaujmy_s2 zaujmy_s3"
+    "zaujmy_s4 zaujmy_s5";
 
   margin-bottom: 5px;
-}
-
-.grid1_1 {
-  grid-column: 1;
-  grid-row: 1;
-}
-.grid2_1 {
-  grid-column: 2;
-  grid-row: 1;
-}
-.grid2_3 {
-  grid-column: 2;
-  grid-row: 3;
-}
-.grid2_4 {
-  grid-column: 2;
-  grid-row: 4;
-}
-
-.grid3_1 {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.grid4_1 {
-  grid-column: 4;
-  grid-row: 1;
+  justify-content: space-evenly;
 }
 
 .container_hobbies {
@@ -92,7 +337,6 @@
 }
 
 //! ---------Media Queries---------
-
 @media (min-width: 350px) {
   .container_aboutMe {
     img {
@@ -102,91 +346,97 @@
 }
 
 @media (min-width: 370px) {
-  .grid_15_45_40 {
-    grid-template-columns: 15% 40% 40%;
-  }
-
-  .container_hobbies {
-    margin-left: 14%;
+  .introduction,
+  .vzdelanie,
+  .skusenosti,
+  .znalosti,
+  .udaje {
+    padding: 0 4%;
   }
 }
 
 @media (min-width: 400px) {
-  .grid_35_65 {
-    grid-template-columns: 37% 63%;
+  .znalosti_s2,
+  .znalosti_s3,
+  .znalosti_s4,
+  .znalosti_s5,
+  .znalosti_s6 {
+    grid-template-columns: 18% 46% 36%;
+  }
+
+  .udaje_s2,
+  .udaje_s3,
+  .udaje_s4,
+  .udaje_s5,
+  .udaje_s6 {
+    grid-template-columns: 18% 83%;
+  }
+
+  .vzdelanie,
+  .skusenosti {
+    grid-template-columns: 40% 60%;
   }
 }
 
 @media (min-width: 420px) {
-  .udaje,
-  .znalosti {
-    margin-left: 3%;
+  .introduction,
+  .vzdelanie,
+  .skusenosti,
+  .znalosti,
+  .udaje {
+    padding: 0 5%;
   }
 }
 
-@media (min-width: 440px) {
-  .udaje,
-  .znalosti {
-    margin-left: 13%;
+@media (min-width: 450px) {
+  .hidde1 {
+    display: none;
   }
+  .udaje_zaujmy {
+    display: grid;
 
-  .grid_15_45_40 {
-    grid-template-columns: 17% 43% 25%;
+    grid-template-areas: "udaje zaujmy";
   }
-
-  .grid_15_85 {
-    grid-template-columns: 17% 63%;
+  .zaujmy {
+    grid-template-areas:
+      "zaujmy_s1"
+      "zaujmy_s2"
+      "zaujmy_s3"
+      "zaujmy_s4"
+      "zaujmy_s5";
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 470px) {
   .container_aboutMe {
-    font-size: 1.1rem;
-  }
-
-  .grid_25_25_25_25 {
-    grid-template-columns: 15% 33% 15% 20%;
-  }
-
-  .grid_35_65 {
-    grid-template-columns: 160px 63%;
+    font-size: 1.05rem;
   }
 }
 
-@media (min-width: 540px) {
-  // .udaje {
-  //   margin-left: 1%;
-  // }
+@media (min-width: 525px) {
+  .hidde2 {
+    display: none;
+  }
+  .znalosti_udaje_zaujmy {
+    display: grid;
 
-  // .skuska {
-  //   display: grid;
-  //   grid-template-columns: 26% 33% 15% 20%;
-  //   grid-template-rows: 10% 25% 25% 25%;
-  // }
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
 
-  // .grid_15_85 {
-  //   display: block;
-  // }
+    grid-template-areas: "znalosti udaje"
+    "zaujmy zaujmy";
+  }
 
-  // .grid_25_25_25_25 {
-  //   display: block;
-  // }
+  .zaujmy {
+    grid-template-areas:
+      "zaujmy_s1 zaujmy_s1"
+      "zaujmy_s2 zaujmy_s3"
+      "zaujmy_s4 zaujmy_s5";
+  }
 
-  // .skuska_grid1_1 {
-  //   grid-column: 1;
-  //   grid-row: 1;
-  // }
-
-  // .skuska_grid1_2 {
-  //   grid-column: 1;
-  //   grid-row: 2;
-  // }
-  // .skuska_grid2_2 {
-  //   grid-column: 2;
-  //   grid-row: 2;
-  // }
-  // .skuska_grid5_1 {
-  //   grid-column: 5;
-  //   grid-row: 1;
-  // }
+  .udaje_zaujmy {
+    grid-template-areas:
+      "udaje"
+      "zaujmy";
+  }
 }
