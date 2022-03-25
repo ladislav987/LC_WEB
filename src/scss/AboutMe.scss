@@ -17,35 +17,66 @@
   p {
     margin-bottom: 5px;
   }
+
+  display: grid;
+
+  grid-template-areas:
+    "foto"
+    "introduction_paragraf"
+    "border"
+    "vzdelanie"
+    "border1"
+    "skusenosti"
+    "border2"
+    "znalosti"
+    "border3"
+    "udaje"
+    "border4"
+    "zaujmy"
+    "border5"
+    "vlastnosti";
 }
 
-.border {
+.border,
+.border1,
+.border2,
+.border3,
+.border4,
+.border5 {
   margin-top: 10px;
   border-bottom: 3px solid grey;
 }
 
-.grid_35_65 {
-  display: grid;
-  grid-template-columns: 35% 65%;
-
-  margin-bottom: 5px;
+.border {
+  grid-area: border;
+}
+.border1 {
+  grid-area: border1;
+}
+.border2 {
+  grid-area: border2;
+}
+.border3 {
+  grid-area: border3;
+}
+.border4 {
+  grid-area: border4;
+}
+.border5 {
+  grid-area: border5;
 }
 
-.grid_15_85 {
-  display: grid;
-  grid-template-columns: 15% 85%;
+// //! introduction sekcia
 
-  margin-bottom: 5px;
+.foto {
+  grid-area: foto;
 }
 
-.grid_15_45_40 {
-  display: grid;
-  grid-template-columns: 15% 45% 40%;
-
-  margin-bottom: 5px;
+.introduction_paragraf {
+  grid-area: introduction_paragraf;
 }
 
-//! vzdelanie sekcia
+// //! vzdelanie sekcia
 
 .vzdelanie_s1 {
   grid-area: vzdelanie_s1;
@@ -79,13 +110,18 @@
 .vzdelanie_s10 {
   grid-area: vzdelanie_s10;
 }
+.vzdelanie_s11 {
+  grid-area: vzdelanie_s11;
+}
 
 .vzdelanie {
+  grid-area: vzdelanie;
   display: grid;
 
   grid-template-columns: 37% 63%;
 
   grid-template-areas:
+    "vzdelanie_s11 vzdelanie_s11"
     "vzdelanie_s1 vzdelanie_s2"
     ". vzdelanie_s3"
     ". vzdelanie_s4"
@@ -95,7 +131,7 @@
     "vzdelanie_s9 vzdelanie_s10";
 }
 
-//! skusenosti sekcia
+// //! skusenosti sekcia
 
 .skusenosti_s1 {
   grid-area: skusenosti_s1;
@@ -106,17 +142,22 @@
 .skusenosti_s3 {
   grid-area: skusenosti_s3;
 }
+.skusenosti_s4 {
+  grid-area: skusenosti_s4;
+}
 
 .skusenosti {
+  grid-area: skusenosti;
   display: grid;
   grid-template-columns: 37% 63%;
 
   grid-template-areas:
+    "skusenosti_s4 skusenosti_s4"
     "skusenosti_s1 skusenosti_s2"
     ".  skusenosti_s3";
 }
 
-//! znalosti sekcia
+// //! znalosti sekcia
 
 .znalosti_s1 {
   grid-area: znalosti_s1;
@@ -190,6 +231,7 @@
 }
 
 .znalosti {
+  grid-area: znalosti;
   display: grid;
   grid-template-areas:
     "znalosti_s1"
@@ -211,7 +253,7 @@
   grid-template-columns: 17% 49% 32%;
 }
 
-//! udaje sekcia
+// //! udaje sekcia
 
 .udaje_s1 {
   grid-area: udaje_s1;
@@ -270,6 +312,8 @@
 }
 
 .udaje {
+  grid-area: udaje;
+
   display: grid;
 
   grid-template-areas:
@@ -303,7 +347,6 @@
 
   grid-template-columns: 45% 55%;
 }
-
 .zaujmy_s1 {
   grid-area: zaujmy_s1;
 }
@@ -321,12 +364,55 @@
 }
 
 .zaujmy {
+  grid-area: zaujmy;
   display: grid;
 
   grid-template-areas:
     "zaujmy_s1 zaujmy_s1"
     "zaujmy_s2 zaujmy_s3"
     "zaujmy_s4 zaujmy_s5";
+
+  margin-bottom: 5px;
+  // justify-content: space-evenly;
+}
+
+//! vlastnosti sekcia
+
+.vlastnosti_s2,
+.vlastnosti_s3,
+.vlastnosti_s4,
+.vlastnosti_s5 {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 28% 79%;
+}
+.vlastnosti_s1 {
+  grid-area: vlastnosti_s1;
+}
+.vlastnosti_s2 {
+  grid-area: vlastnosti_s2;
+}
+.vlastnosti_s3 {
+  grid-area: vlastnosti_s3;
+}
+.vlastnosti_s4 {
+  grid-area: vlastnosti_s4;
+}
+.vlastnosti_s5 {
+  grid-area: vlastnosti_s5;
+}
+
+.vlastnosti {
+  grid-area: vlastnosti;
+  display: grid;
+
+  grid-template-areas:
+    "vlastnosti_s1"
+    "vlastnosti_s2"
+    "vlastnosti_s3"
+    "vlastnosti_s4"
+    "vlastnosti_s5";
 
   margin-bottom: 5px;
   justify-content: space-evenly;
@@ -336,22 +422,55 @@
   margin-left: 8%;
 }
 
-//! ---------Media Queries---------
+.title {
+  display: none;
+}
+
+// //! ---------Media Queries---------
+
 @media (min-width: 350px) {
   .container_aboutMe {
     img {
-      width: 170px;
+      width: 180px;
     }
   }
 }
 
 @media (min-width: 370px) {
-  .introduction,
+  .foto,
+  .introduction_paragraf,
   .vzdelanie,
   .skusenosti,
   .znalosti,
   .udaje {
     padding: 0 4%;
+  }
+}
+
+@media (min-width: 380px) {
+  .container_aboutMe {
+    grid-template-areas:
+      "foto foto"
+      "introduction_paragraf introduction_paragraf"
+      "border border"
+      "vzdelanie vzdelanie"
+      "border1 border1"
+      "skusenosti skusenosti"
+      "border2 border2"
+      "znalosti znalosti"
+      "border3 border3"
+      "udaje udaje"
+      "border4 border4"
+      "zaujmy vlastnosti";
+  }
+
+  .zaujmy {
+    grid-template-areas:
+      "zaujmy_s1"
+      "zaujmy_s2"
+      "zaujmy_s3"
+      "zaujmy_s4"
+      "zaujmy_s5";
   }
 }
 
@@ -379,7 +498,8 @@
 }
 
 @media (min-width: 420px) {
-  .introduction,
+  .foto,
+  .introduction_paragraf,
   .vzdelanie,
   .skusenosti,
   .znalosti,
@@ -388,15 +508,24 @@
   }
 }
 
-@media (min-width: 450px) {
+@media (min-width: 485px) {
+  .container_aboutMe {
+    grid-template-areas:
+      "foto foto"
+      "introduction_paragraf introduction_paragraf"
+      "border border"
+      "vzdelanie vzdelanie"
+      "border1 border1"
+      "skusenosti skusenosti"
+      "border2 border2"
+      "znalosti zaujmy"
+      "border3 border3"
+      "udaje vlastnosti";
+  }
   .hidde1 {
     display: none;
   }
-  .udaje_zaujmy {
-    display: grid;
 
-    grid-template-areas: "udaje zaujmy";
-  }
   .zaujmy {
     grid-template-areas:
       "zaujmy_s1"
@@ -405,26 +534,93 @@
       "zaujmy_s4"
       "zaujmy_s5";
   }
+
+  .udaje_s2,
+  .udaje_s3,
+  .udaje_s4,
+  .udaje_s5,
+  .udaje_s6 {
+    grid-template-columns: 16% 84%;
+  }
+
+  .vlastnosti_s2,
+  .vlastnosti_s3,
+  .vlastnosti_s4,
+  .vlastnosti_s5 {
+    grid-template-columns: 23% 77%;
+  }
+  .zaujmy_s2,
+  .zaujmy_s3,
+  .zaujmy_s4,
+  .zaujmy_s5 {
+    grid-template-columns: 24% 76%;
+    margin-left: 5%;
+  }
+
+  .udaje,
+  .znalosti {
+    padding: 0 3%;
+  }
 }
 
-@media (min-width: 470px) {
+@media (min-width: 500px) {
   .container_aboutMe {
     font-size: 1.05rem;
+    img {
+      width: 200px;
+    }
   }
 }
 
-@media (min-width: 525px) {
-  .hidde2 {
-    display: none;
+@media (min-width: 530px) {
+  .udaje,
+  .znalosti {
+    padding: 0 5%;
   }
-  .znalosti_udaje_zaujmy {
-    display: grid;
 
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 1fr 1fr;
+  .zaujmy_s2,
+  .zaujmy_s3,
+  .zaujmy_s4,
+  .zaujmy_s5 {
+    grid-template-columns: 22% 78%;
+  }
+}
 
-    grid-template-areas: "znalosti udaje"
-    "zaujmy zaujmy";
+@media (min-width: 550px) {
+  .vlastnosti {
+    justify-content: normal;
+  }
+
+  .zaujmy_s2,
+  .zaujmy_s3,
+  .zaujmy_s4,
+  .zaujmy_s5 {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 655px) {
+  .container_aboutMe {
+    font-size: 1.13rem;
+    img {
+      width: 220px;
+    }
+  }
+}
+
+@media (min-width: 685px) {
+  .container_aboutMe {
+    grid-template-areas:
+      "foto foto"
+      "introduction_paragraf introduction_paragraf"
+      "border border"
+      "vzdelanie vzdelanie"
+      "border1 border1"
+      "skusenosti skusenosti"
+      "border2 border2"
+      "znalosti udaje"
+      "border3 border3"
+      "zaujmy vlastnosti";
   }
 
   .zaujmy {
@@ -434,9 +630,103 @@
       "zaujmy_s4 zaujmy_s5";
   }
 
-  .udaje_zaujmy {
+  .vlastnosti {
+    margin-left: 5%;
     grid-template-areas:
-      "udaje"
-      "zaujmy";
+      "vlastnosti_s1 vlastnosti_s1"
+      "vlastnosti_s2 vlastnosti_s3"
+      "vlastnosti_s4 vlastnosti_s5";
+  }
+
+  .udaje {
+    margin-left: 13%;
+  }
+  .znalosti {
+    width: 110%;
+  }
+  .udaje,
+  .znalosti,
+  .zaujmy {
+    padding: 0 3%;
+  }
+
+  .zaujmy_s2,
+  .zaujmy_s3,
+  .zaujmy_s4,
+  .zaujmy_s5 {
+    grid-template-columns: 38% 78%;
+  }
+}
+
+@media (min-width: 755px) {
+  .vlastnosti {
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 795px) {
+  .container_aboutMe {
+    column-gap: 2%;
+    grid-template-columns: 36% 62%;
+    grid-template-areas:
+      "foto introduction_paragraf"
+      ". border1"
+      "udaje vzdelanie"
+      ". border2"
+      "zaujmy skusenosti"
+      ". border3"
+      "vlastnosti znalosti";
+
+    font-size: 1.05rem;
+    img {
+      margin-bottom: 0;
+      margin-top: 20px;
+      width: 170px;
+    }
+  }
+
+  .zaujmy {
+    grid-template-rows: 33% 19% 19% 19% 19%;
+    grid-template-areas:
+      "zaujmy_s1"
+      "zaujmy_s2"
+      "zaujmy_s3"
+      "zaujmy_s4"
+      "zaujmy_s5";
+  }
+
+  .zaujmy_s2,
+  .zaujmy_s3,
+  .zaujmy_s4,
+  .zaujmy_s5 {
+    grid-template-columns: 21% 79%;
+  }
+
+  .vlastnosti {
+    margin-left: 0;
+    grid-template-areas:
+      "vlastnosti_s1"
+      "vlastnosti_s2"
+      "vlastnosti_s3"
+      "vlastnosti_s4"
+      "vlastnosti_s5";
+  }
+
+  .title {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .introduction_paragraf,
+  .vzdelanie,
+  .skusenosti,
+  .znalosti {
+    padding: 0 1%;
+  }
+
+  .udaje {
+    grid-template-rows: 22% 14% 14% 14% 14%;
+    margin-left: 0%;
   }
 }
