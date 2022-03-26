@@ -45,7 +45,7 @@ const AboutMe = () => {
           Moje meno je <strong>Ladislav</strong>, študujem{" "}
           <strong>informatiku</strong> na{" "}
           <strong>Technickej Univerzite v Košiciach</strong>. Hľadám príležitosť
-          pracovať na projekte, kde si môžem <strong>zdokonaľovať</strong> svoje
+          pracovať na projekte, kde si môžem <strong>Zdokonaliť</strong> svoje
           poznatky a <strong>učiť sa</strong> novým veciam v IT.
         </p>
 
