@@ -6,13 +6,14 @@ import Svg from "../../component/Svg";
 import ThemeButton from "../../component/ThemeButton";
 
 //icons
-import { FaLanguage, FaMapMarkerAlt, FaPencilRuler } from "react-icons/fa";
-import { DiHtml5, DiCss3, DiSass, DiJavascript1 } from "react-icons/di";
 import {
-  BsFillPersonFill,
-  BsFillTelephoneFill,
-  BsFillCalendarWeekFill,
-} from "react-icons/bs";
+  FaLanguage,
+  FaMapMarkerAlt,
+  FaPencilRuler,
+  FaStarOfLife,
+} from "react-icons/fa";
+import { DiHtml5, DiCss3, DiSass, DiJavascript1 } from "react-icons/di";
+import { BsFillPersonFill, BsFillTelephoneFill } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 import { IoBarbellOutline, IoChatbubbleEllipsesSharp } from "react-icons/io5";
 import { BiRun, BiJoystickAlt } from "react-icons/bi";
@@ -148,11 +149,11 @@ const AboutMe = () => {
             <span className="udaje_s5_1">
               <FaMapMarkerAlt size="1.8em" />
             </span>
-            <p className="udaje_s5_2">Vyšný Hrabovec 2, 09034</p>
+            <p className="udaje_s5_2">Vyšný Hrabovec 2, 090 34</p>
           </div>
           <div className="udaje_s6">
             <span className="udaje_s6_1">
-              <BsFillCalendarWeekFill size="1.8em" />
+              <FaStarOfLife size="1.8em" />
             </span>
             <p className="udaje_s6_2">14.8.1997</p>
           </div>
