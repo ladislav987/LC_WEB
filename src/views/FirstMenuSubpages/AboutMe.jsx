@@ -17,7 +17,6 @@ import { GrMail } from "react-icons/gr";
 import { IoBarbellOutline, IoChatbubbleEllipsesSharp } from "react-icons/io5";
 import { BiRun, BiJoystickAlt } from "react-icons/bi";
 import { ImBooks } from "react-icons/im";
-import { VscPerson } from "react-icons/vsc";
 import { GiSherlockHolmes, GiPerson } from "react-icons/gi";
 
 //css
