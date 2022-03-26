@@ -663,7 +663,8 @@
 
 @media (min-width: 795px) {
   .container_aboutMe {
-    grid-template-columns: 36% 64%;
+    column-gap: 2%;
+    grid-template-columns: 36% 62%;
     grid-template-areas:
       "foto introduction_paragraf"
       ". border1"
