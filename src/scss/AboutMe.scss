@@ -1,5 +1,6 @@
 .container_aboutMe {
-  margin: 15px 10px 0 10px;
+  font-family: sans-serif;
+  margin: 0px 10px 0 10px;
 
   #portrait {
     width: 55%;
@@ -665,7 +666,8 @@
   }
   .udaje,
   .znalosti,
-  .zaujmy {
+  .zaujmy,
+  .vlastnosti {
     padding: 0 3%;
   }
 
@@ -685,6 +687,19 @@
 
 @media (min-width: 795px) {
   .container_aboutMe {
+    margin-top: 50px;
+    position: relative;
+    &::before {
+      background-color: #151b27;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 36%;
+      z-index: 1;
+      content: "";
+    }
     column-gap: 2%;
     grid-template-columns: 36% 62%;
     grid-template-areas:
@@ -702,10 +717,33 @@
       margin-top: 20px;
       width: 170px;
     }
+
+    .introduction_paragraf,
+    .vzdelanie,
+    .skusenosti,
+    .znalosti{
+      font-size: 1.15rem;
+    }
+  }
+
+  .foto,
+  .udaje,
+  .zaujmy,
+  .vlastnosti {
+    z-index: 2;
+    color: #c3ada1;
+
+    a {
+      color: #c3ada1;
+    }
+
+    h3 {
+      color: white;
+    }
   }
 
   .zaujmy {
-    grid-template-rows: 33% 19% 19% 19% 19%;
+    grid-template-rows: 32% 25% 25% 25% 25%;;
     grid-template-areas:
       "zaujmy_s1"
       "zaujmy_s2"
@@ -722,6 +760,8 @@
   }
 
   .vlastnosti {
+    margin-top: 75px;
+    grid-template-rows: 22% 19% 19% 19% 19%;;
     margin-left: 0;
     grid-template-areas:
       "vlastnosti_s1"
@@ -758,7 +798,16 @@
 
 @media (min-width: 825px) {
   .container_aboutMe {
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
     max-width: 800px;
+  }
+}
+
+@media (min-width: 950px) {
+   .udaje,
+  .znalosti,
+  .zaujmy,
+  .vlastnosti {
+    padding: 0 5%;
   }
 }
