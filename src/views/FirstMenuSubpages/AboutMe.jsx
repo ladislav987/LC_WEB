@@ -32,7 +32,6 @@ const AboutMe = () => {
           <ThemeButton />
         </nav>
       </header>
-
       <main className="container_aboutMe">
         <img
           id="portrait"
@@ -45,7 +44,7 @@ const AboutMe = () => {
           Moje meno je <strong>Ladislav</strong>, študujem{" "}
           <strong>informatiku</strong> na{" "}
           <strong>Technickej Univerzite v Košiciach</strong>. Hľadám príležitosť
-          pracovať na projekte, kde si môžem <strong>Zdokonaliť</strong> svoje
+          pracovať na projekte, kde si môžem <strong>zdokonaliť</strong> svoje
           poznatky a <strong>učiť sa</strong> novým veciam v IT.
         </p>
 
@@ -115,14 +114,14 @@ const AboutMe = () => {
               <img src={require("../../img/JS.png")} alt="javascript" />
             </span>
             <p className="znalosti_s6_2">JavaScript</p>
-            <p className="znalosti_s6_3"> - pokročilý</p>
+            <p className="znalosti_s6_3"> - mierne pokročilý</p>
           </div>
           <div className="znalosti_s7">
             <span className="znalosti_s7_1">
               <img src={require("../../img/react.png")} alt="react" />
             </span>
             <p className="znalosti_s7_2">React</p>
-            <p className="znalosti_s7_3"> - pokročilý</p>
+            <p className="znalosti_s7_3"> - mierne pokročilý</p>
           </div>
         </section>
 
