@@ -1,7 +1,7 @@
 .container_aboutMe {
   margin: 15px 10px 0 10px;
 
-  img {
+  #portrait {
     width: 55%;
     display: block;
 
@@ -230,6 +230,19 @@
 .znalosti_s6_3 {
   grid-area: znalosti_s6_3;
 }
+.znalosti_s7 {
+  grid-area: znalosti_s7;
+  grid-template-areas: "znalosti_7_1 znalosti_7_2 znalosti_7_3";
+}
+.znalosti_s7_1 {
+  grid-area: znalosti_7_1;
+}
+.znalosti_s7_2 {
+  grid-area: znalosti_7_2;
+}
+.znalosti_s7_3 {
+  grid-area: znalosti_7_3;
+}
 
 .znalosti {
   grid-area: znalosti;
@@ -240,16 +253,23 @@
     "znalosti_s3"
     "znalosti_s4"
     "znalosti_s5"
-    "znalosti_s6";
+    "znalosti_s6"
+    "znalosti_s7";
+
+  img {
+    width: 35px;
+  }
 }
 
 .znalosti_s2,
 .znalosti_s3,
 .znalosti_s4,
 .znalosti_s5,
-.znalosti_s6 {
+.znalosti_s6,
+.znalosti_s7 {
   display: grid;
   justify-content: start;
+  align-items: center;
 
   grid-template-columns: 17% 49% 32%;
 }
@@ -431,7 +451,7 @@
 
 @media (min-width: 350px) {
   .container_aboutMe {
-    img {
+    #portrait {
       width: 180px;
     }
   }
@@ -480,7 +500,8 @@
   .znalosti_s3,
   .znalosti_s4,
   .znalosti_s5,
-  .znalosti_s6 {
+  .znalosti_s6,
+  .znalosti_s7 {
     grid-template-columns: 18% 46% 36%;
   }
 
@@ -567,7 +588,7 @@
 @media (min-width: 500px) {
   .container_aboutMe {
     font-size: 1.05rem;
-    img {
+    #portrait {
       width: 200px;
     }
   }
@@ -603,7 +624,7 @@
 @media (min-width: 655px) {
   .container_aboutMe {
     font-size: 1.13rem;
-    img {
+    #portrait {
       width: 220px;
     }
   }
@@ -676,7 +697,7 @@
       "vlastnosti znalosti";
 
     font-size: 1.05rem;
-    img {
+    #portrait {
       margin-bottom: 0;
       margin-top: 20px;
       width: 170px;
@@ -726,6 +747,12 @@
   .udaje {
     grid-template-rows: 23% 15% 15% 15% 15%;
     margin-left: 0%;
+  }
+
+  .znalosti {
+    img {
+      width: 45px;
+    }
   }
 }
 

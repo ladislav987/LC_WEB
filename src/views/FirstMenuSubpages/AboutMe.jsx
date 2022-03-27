@@ -7,12 +7,11 @@ import ThemeButton from "../../component/ThemeButton";
 
 //icons
 import {
-  FaLanguage,
   FaMapMarkerAlt,
   FaPencilRuler,
   FaStarOfLife,
 } from "react-icons/fa";
-import { DiHtml5, DiCss3, DiSass, DiJavascript1 } from "react-icons/di";
+
 import { BsFillPersonFill, BsFillTelephoneFill } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 import { IoBarbellOutline, IoChatbubbleEllipsesSharp } from "react-icons/io5";
@@ -36,6 +35,7 @@ const AboutMe = () => {
 
       <main className="container_aboutMe">
         <img
+          id="portrait"
           className="foto"
           src={require("../../img/Foto.png")}
           alt="portrait"
@@ -84,38 +84,45 @@ const AboutMe = () => {
           <h3 className="znalosti_s1">Znalosti</h3>
           <div className="znalosti_s2">
             <span className="znalosti_s2_1">
-              <FaLanguage size="1.8em" />
+              <img src={require("../../img/english.png")} alt="english" />
             </span>
             <p className="znalosti_s2_2">Anglický jazyk</p>
             <p className="znalosti_s2_3"> - B1</p>
           </div>
           <div className="znalosti_s3">
             <span className="znalosti_s3_1">
-              <DiHtml5 size="1.8em" />
+              <img src={require("../../img/html.png")} alt="html" />
             </span>
             <p className="znalosti_s3_2">HTML</p>
             <p className="znalosti_s3_3"> - pokročilý</p>
           </div>
           <div className="znalosti_s4">
             <span className="znalosti_s4_1">
-              <DiCss3 size="1.8em" />
+              <img src={require("../../img/css.png")} alt="css" />
             </span>
             <p className="znalosti_s4_2">CSS</p>
             <p className="znalosti_s4_3"> - pokročilý</p>
           </div>
           <div className="znalosti_s5">
             <span className="znalosti_s5_1">
-              <DiSass size="1.8em" />
+              <img src={require("../../img/sass.png")} alt="sass" />
             </span>
             <p className="znalosti_s5_2">SASS</p>
             <p className="znalosti_s5_3"> - pokročilý</p>
           </div>
           <div className="znalosti_s6">
             <span className="znalosti_s6_1">
-              <DiJavascript1 size="1.8em" />
+              <img src={require("../../img/JS.png")} alt="javascript" />
             </span>
             <p className="znalosti_s6_2">JavaScript</p>
             <p className="znalosti_s6_3"> - pokročilý</p>
+          </div>
+          <div className="znalosti_s7">
+            <span className="znalosti_s7_1">
+              <img src={require("../../img/react.png")} alt="react" />
+            </span>
+            <p className="znalosti_s7_2">React</p>
+            <p className="znalosti_s7_3"> - pokročilý</p>
           </div>
         </section>
 
