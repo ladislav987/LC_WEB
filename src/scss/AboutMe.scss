@@ -1,6 +1,6 @@
 .container_aboutMe {
   font-family: sans-serif;
-  margin: 0px 10px 0 10px;
+  margin: 20px 10px 0 10px;
 
   #portrait {
     width: 55%;
@@ -466,7 +466,15 @@
   .znalosti,
   .zaujmy,
   .udaje {
-    padding: 0 4%;
+    padding-left: 4%;
+  }
+  .znalosti_s2,
+  .znalosti_s3,
+  .znalosti_s4,
+  .znalosti_s5,
+  .znalosti_s6,
+  .znalosti_s7 {
+    grid-template-columns: 16% 37% 41%;
   }
 }
 
@@ -488,6 +496,7 @@
   }
 
   .zaujmy {
+    margin-left: 7%;
     grid-template-areas:
       "zaujmy_s1"
       "zaujmy_s2"
@@ -529,7 +538,7 @@
   .znalosti,
   .zaujmy,
   .udaje {
-    padding: 0 5%;
+    padding-left: 5%;
   }
 }
 
@@ -584,7 +593,16 @@
 
   .udaje,
   .znalosti {
-    padding: 0 3%;
+    padding-left: 3%;
+  }
+
+  .znalosti_s2,
+  .znalosti_s3,
+  .znalosti_s4,
+  .znalosti_s5,
+  .znalosti_s6,
+  .znalosti_s7 {
+    grid-template-columns: 17% 35% 49%;
   }
 }
 
@@ -600,7 +618,7 @@
 @media (min-width: 530px) {
   .udaje,
   .znalosti {
-    padding: 0 5%;
+    padding-left: 5%;
   }
 
   .zaujmy_s2,
@@ -670,7 +688,7 @@
   .znalosti,
   .zaujmy,
   .vlastnosti {
-    padding: 0 3%;
+    padding-left: 3%;
   }
 
   .zaujmy_s2,
@@ -678,6 +696,15 @@
   .zaujmy_s4,
   .zaujmy_s5 {
     grid-template-columns: 38% 78%;
+  }
+
+  .znalosti_s2,
+  .znalosti_s3,
+  .znalosti_s4,
+  .znalosti_s5,
+  .znalosti_s6,
+  .znalosti_s7 {
+    grid-template-columns: 18% 37% 56%;
   }
 }
 
@@ -723,7 +750,7 @@
     .introduction_paragraf,
     .vzdelanie,
     .skusenosti,
-    .znalosti{
+    .znalosti {
       font-size: 1.15rem;
     }
   }
@@ -745,7 +772,7 @@
   }
 
   .zaujmy {
-    grid-template-rows: 32% 25% 25% 25% 25%;;
+    grid-template-rows: 32% 25% 25% 25% 25%;
     grid-template-areas:
       "zaujmy_s1"
       "zaujmy_s2"
@@ -763,7 +790,7 @@
 
   .vlastnosti {
     margin-top: 75px;
-    grid-template-rows: 22% 19% 19% 19% 19%;;
+    grid-template-rows: 22% 19% 19% 19% 19%;
     margin-left: 0;
     grid-template-areas:
       "vlastnosti_s1"
@@ -806,7 +833,7 @@
 }
 
 @media (min-width: 950px) {
-   .udaje,
+  .udaje,
   .znalosti,
   .zaujmy,
   .vlastnosti {
