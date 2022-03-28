@@ -10,7 +10,6 @@ import FirstMenu from "./views/FirstMenu";
 import AboutMe from "./views/FirstMenuSubpages/AboutMe";
 import Portfolio from "./views/FirstMenuSubpages/Portfolio";
 import Documentation from "./views/FirstMenuSubpages/Documentation";
-import Other from "./views/FirstMenuSubpages/Other";
 
 import Html from "./views/documentationSubpages/Html";
 import Css from "./views/documentationSubpages/Css";
@@ -32,7 +31,6 @@ const App = () => {
               <Route path="/aboutMe/*" element={<AboutMe />} />
               <Route path="/portfolio/*" element={<Portfolio />} />
               <Route path="/documentation/*" element={<Documentation />} />
-              <Route path="/other/*" element={<Other />} />
 
               <Route path="/html/*" element={<Html />} />
               <Route path="/css/*" element={<Css />} />

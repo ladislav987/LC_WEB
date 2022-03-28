@@ -15,17 +15,14 @@ const FirstMenu = () => {
       </header>
       <div className="gridMenu">
         <div className="gridMenuContainer">
-          <NavLink to="/aboutMe" className="item">
+          <NavLink to="/aboutMe" className="item aboutMe">
             O mne
           </NavLink>
-          <NavLink to="/portfolio" className="item">
+          <NavLink to="/portfolio" className="item portfolio">
             Portfólio
           </NavLink>
-          <NavLink to="/documentation" className="item">
+          <NavLink to="/documentation" className="item documentation">
             Dokumentácia
-          </NavLink>
-          <NavLink to="/other" className="item">
-            Iné niečo
           </NavLink>
         </div>
       </div>

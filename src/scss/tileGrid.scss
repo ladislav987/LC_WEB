@@ -1,67 +1,91 @@
 //? Menu ktoré má display grid
 .gridMenu {
-    text-align: center;
-    margin: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.aboutMe {
+  grid-area: aboutMe;
+}
+
+.portfolio {
+  grid-area: portfolio;
+}
+
+.documentation {
+  grid-area: documentation;
 }
 
 .gridMenuContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-areas:
+    "aboutMe aboutMe"
+    "portfolio documentation";
 
-    gap: 20px;
+  gap: 20px;
 
-    margin: 20px 20px 0 20px;
+  margin: 20px 20px 0 20px;
 
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 //? jednotlive dlaždice
 .item {
-    box-shadow: rgba($color: #000000, $alpha: 0.2) 0px 1px;
+  box-shadow: rgba($color: #000000, $alpha: 0.2) 0px 1px;
 
-    animation-duration: 1.5s;
-    animation-name: from_left;
+  animation-duration: 1.5s;
+  animation-name: from_left;
 
-    position: relative;
+  position: relative;
 
-    opacity: 0.7;
+  opacity: 0.7;
 
-    min-height: 360px;
+  min-height: 310px;
 
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .item:hover,
 .item:active {
-    opacity: 1;
-    transition: linear 0.4s;
+  opacity: 1;
+  transition: linear 0.4s;
 }
 
 //? keyframes pre animáciu
 @keyframes from_left {
-    from {
-        left: -800px;
-        opacity: 0;
-    }
-    50% {
-        left: 0;
-    }
+  from {
+    left: -800px;
+    opacity: 0;
+  }
+  50% {
+    left: 0;
+  }
 
-    to {
-        opacity: 0.7;
-    }
+  to {
+    opacity: 0.7;
+  }
 }
 
 //! ---------Media Queries---------
 
 @media (max-width: 525px) {
-    .gridMenuContainer {
-        grid-template-columns: 1fr;
-    }
+  .gridMenuContainer {
+    grid-template-areas:
+      "aboutMe"
+      "portfolio"
+      "documentation";
+  }
 }
 
 @media (min-width: 525px) and (max-width: 630px) {
-    .item {
-        min-height: 250px;
-    }
+  .item {
+    min-height: 200px;
+  }
+}
+
+@media (min-width: 785px) {
+  .gridMenuContainer {
+    margin: 20px auto 0 auto;
+    max-width: 780px;
+  }
 }
