@@ -1,0 +1,28 @@
+.aboutMe,
+.portfolio,
+.documentation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutMeP,
+.portfolioP,
+.documentationP {
+  position: relative;
+  color: #000000;
+  line-height: 0.9;
+  font-size: 2rem;
+  text-align: center;
+}
+
+// .aboutMe::before,
+// .portfolio::before,
+// .documentation::before {
+//   content: " ";
+//   position: absolute;
+//   top: 0px;
+//   right: 0px;
+//   bottom: 0px;
+//   left: 0px;
+// }
