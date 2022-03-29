@@ -802,10 +802,14 @@
   }
 
   .title {
-    margin-top: 25px ;
+    margin: 25px 0 25px 0;
     display: block;
     text-align: center;
     font-size: 2rem;
+  }
+
+  .description{
+    margin-top: 18px;
   }
 
   .introduction_paragraf,
