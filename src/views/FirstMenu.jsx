@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import ThemeButton from "../component/ThemeButton";
 import Svg from "../component/Svg";
 
+import "../scss/FirstMenu.scss";
+
 const FirstMenu = () => {
   return (
     <>
@@ -16,13 +18,13 @@ const FirstMenu = () => {
       <div className="gridMenu">
         <div className="gridMenuContainer">
           <NavLink to="/aboutMe" className="item aboutMe">
-            O mne
+            <p className="aboutMeP">O mne</p>
           </NavLink>
           <NavLink to="/portfolio" className="item portfolio">
-            Portfólio
+            <p className="portfolioP">Portfólio</p>
           </NavLink>
           <NavLink to="/documentation" className="item documentation">
-            Dokumentácia
+            <p className="documentationP">Dokumentácia</p>
           </NavLink>
         </div>
       </div>
