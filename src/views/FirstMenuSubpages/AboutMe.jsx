@@ -6,11 +6,7 @@ import Svg from "../../component/Svg";
 import ThemeButton from "../../component/ThemeButton";
 
 //icons
-import {
-  FaMapMarkerAlt,
-  FaPencilRuler,
-  FaStarOfLife,
-} from "react-icons/fa";
+import { FaMapMarkerAlt, FaPencilRuler, FaStarOfLife } from "react-icons/fa";
 
 import { BsFillPersonFill, BsFillTelephoneFill } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
@@ -39,14 +35,16 @@ const AboutMe = () => {
           src={require("../../img/Foto.png")}
           alt="portrait"
         />
-        <p className="introduction_paragraf">
-          <h2 className="title">Ladislav Chvastaš</h2>
-          Moje meno je <strong>Ladislav</strong>, študujem{" "}
-          <strong>informatiku</strong> na{" "}
-          <strong>Technickej Univerzite v Košiciach</strong>. Hľadám príležitosť
-          pracovať na projekte, kde si môžem <strong>zdokonaliť</strong> svoje
-          poznatky a <strong>učiť sa</strong> novým veciam v IT.
-        </p>
+        <div className="introduction_paragraf">
+          <p className="title">Ladislav Chvastaš</p>
+          <p>
+            Moje meno je <strong>Ladislav</strong>, študujem{" "}
+            <strong>informatiku</strong> na{" "}
+            <strong>Technickej Univerzite v Košiciach</strong>. Hľadám
+            príležitosť pracovať na projekte, kde môžem <strong>využiť </strong>{" "}
+            a<strong> zdokonaliť</strong> si svoje vedomosti z web developmentu.
+          </p>
+        </div>
 
         <div className="border hidde"></div>
 
