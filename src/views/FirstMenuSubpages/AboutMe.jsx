@@ -37,7 +37,7 @@ const AboutMe = () => {
         />
         <div className="introduction_paragraf">
           <p className="title">Ladislav Chvastaš</p>
-          <p>
+          <p className="description">
             Moje meno je <strong>Ladislav</strong>, študujem{" "}
             <strong>informatiku</strong> na{" "}
             <strong>Technickej Univerzite v Košiciach</strong>. Hľadám
