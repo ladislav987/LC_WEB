@@ -37,6 +37,13 @@ const Portfolio = () => {
           >
             <p className="calculatorJSP">Calculator JS</p>
           </a>
+
+          <a
+            className="itemPortfolio snakeJS "
+            href="https://lc-snake.netlify.app/"
+          >
+            <p className="snakeJSP">Snake JS</p>
+          </a>
         </div>
       </div>
     </>

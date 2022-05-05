@@ -12,7 +12,6 @@
   border-radius: 5px;
 }
 
-
 //? Menu ktoré má display grid
 .gridMenu {
   text-align: center;
@@ -82,9 +81,29 @@
   opacity: 0.1;
 }
 
+.snakeJS {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: snakeJS;
+}
+.snakeJS::before {
+  content: " ";
+  background-image: url(.././img/snake-preview.png);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+}
+
 .calculatorJSP,
 .tipsCalculatorJSP,
-.tipsCalculatorReactP {
+.tipsCalculatorReactP,
+.snakeJSP {
   position: relative;
   color: #000000;
   line-height: 0.9;
@@ -94,7 +113,8 @@
 
 .calculatorJS:hover::before,
 .tipsCalculatorJS:hover::before,
-.tipsCalculatorReact:hover::before {
+.tipsCalculatorReact:hover::before,
+.snakeJS:hover::before {
   opacity: 1;
   transition: linear 0.4s;
 }
@@ -104,7 +124,9 @@
 .tipsCalculatorJS:hover,
 .tipsCalculatorJS:active,
 .tipsCalculatorReact:hover,
-.tipsCalculatorReact:active {
+.tipsCalculatorReact:active,
+.snakeJS:hover,
+.snakeJS:active {
   p {
     opacity: 0;
     transition: linear 0.2s;
@@ -116,7 +138,7 @@
   grid-template-columns: 48.3% 48.2%;
   grid-template-areas:
     "tipsCalculatorJS tipsCalculatorReact"
-    "calculatorJS calculatorJS";
+    "calculatorJS snakeJS";
 
   gap: 20px;
 
@@ -148,7 +170,8 @@
     grid-template-areas:
       "tipsCalculatorJS"
       "tipsCalculatorReact"
-      "calculatorJS";
+      "calculatorJS"
+      "snakeJS";
   }
 }
 
