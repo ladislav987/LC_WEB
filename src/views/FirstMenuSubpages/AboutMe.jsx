@@ -73,6 +73,12 @@ const AboutMe = () => {
           <p className="skusenosti_s3">
             Pracovná pozícia: pracovník v Tesco Distribution Centre
           </p>
+
+          <p className="skusenosti_s5 bold">2/2018 - 3/2019</p>
+          <p className="skusenosti_s6">
+            Volkswagen Slovakia, a.s., Devínska Nová Ves
+          </p>
+          <p className="skusenosti_s7">Pracovná pozícia: Kontrolór kvality</p>
         </section>
 
         <div className="border2 hidde"></div>

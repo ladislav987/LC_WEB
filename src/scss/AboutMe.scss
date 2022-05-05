@@ -147,6 +147,15 @@
 .skusenosti_s4 {
   grid-area: skusenosti_s4;
 }
+.skusenosti_s5 {
+  grid-area: skusenosti_s5;
+}
+.skusenosti_s6 {
+  grid-area: skusenosti_s6;
+}
+.skusenosti_s7 {
+  grid-area: skusenosti_s7;
+}
 
 .skusenosti {
   grid-area: skusenosti;
@@ -156,7 +165,9 @@
   grid-template-areas:
     "skusenosti_s4 skusenosti_s4"
     "skusenosti_s1 skusenosti_s2"
-    ".  skusenosti_s3";
+    ".  skusenosti_s3"
+    "skusenosti_s5 skusenosti_s6"
+    ". skusenosti_s7";
 }
 
 // //! znalosti sekcia
